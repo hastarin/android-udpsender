@@ -26,8 +26,7 @@
         android:layout_alignRight="@+id/textView1"
         android:layout_below="@+id/textView1"
         android:ems="10"
-        android:hint="@string/hint_ip"
-        android:text="192.168.1.90" />
+        android:hint="@string/hint_ip" />
 
     <EditText
         android:id="@+id/editTextPort"
@@ -38,8 +37,7 @@
         android:layout_below="@+id/textView2"
         android:ems="10"
         android:hint="@string/hint_port"
-        android:inputType="number|numberDecimal"
-        android:text="50000" />
+        android:inputType="number|numberDecimal" />
 
     <TextView
         android:id="@+id/textView3"
@@ -80,8 +78,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView4"
         android:ems="10"
-        android:hint="@string/hint_hex"
-        android:text="350055" />
+        android:hint="@string/hint_hex" />
 
     <Button
         android:id="@+id/buttonSend"

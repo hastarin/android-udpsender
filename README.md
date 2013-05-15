@@ -15,7 +15,9 @@ UDP packets can be sent via [Tasker](http://tasker.dinglisch.net/) with the Misc
 Just set it up as follows:
 * Action = android.intent.action.SENDTO
 * Data = udp://host:port/data
+* Target = Activity
 
 Example for a www.limitlessled.com Wi-Fi bridge at 192.168.1.100 to turn on all the white LEDs
 * Action = android.intent.action.SENDTO
 * Data = udp://192.168.1.100:50000/0x350055
+* Target = Activity
