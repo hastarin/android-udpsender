@@ -6,6 +6,7 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
 import java.net.UnknownHostException;
+import java.util.Locale;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ import android.widget.Toast;
 public class SendToUriActivity extends Activity {
 
 	public static byte[] hexStringToBytes(String input) {
+		input = input.toLowerCase(Locale.US);
 		int n = input.length() / 2;
 		byte[] output = new byte[n];
 		int l = 0;

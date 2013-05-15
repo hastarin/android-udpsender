@@ -14,6 +14,5 @@
     <string name="hint_port">50000</string>
     <string name="button_send">Send</string>
     <string name="title_activity_send_to_uri">SendToUri</string>
-    <string name="hello_world">Hello world!</string>
 
 </resources>
