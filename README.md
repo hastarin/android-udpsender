@@ -21,3 +21,10 @@ Example for a www.limitlessled.com Wi-Fi bridge at 192.168.1.100 to turn on all 
 * Action = android.intent.action.SENDTO
 * Data = udp://192.168.1.100:50000/0x350055
 * Target = Activity
+
+Download
+--------
+
+I hope to publish a version to the Play store in the next few days.
+
+Meanwhile if you're happy installing from Unknown sources you can download the [UDPSender.apk](https://www.dropbox.com/s/g2lp20e17qous29/UDPSender.apk).
