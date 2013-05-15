@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UDP Sender</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_destination_ip">Destination IP</string>
+    <string name="label_port">Port</string>
+    <string name="label_text">Text</string>
+    <string name="label_hex">Hex</string>
+    <string name="label_hex_default">Hex values will be used instead of Text if set</string>
+    <string name="hint_ip">Enter an IP</string>
+    <string name="hint_text">Enter text to send -or-</string>
+    <string name="hint_hex">Enter HEX values to send</string>
+    <string name="hint_port">50000</string>
+    <string name="button_send">Send</string>
+    <string name="title_activity_send_to_uri">SendToUri</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
