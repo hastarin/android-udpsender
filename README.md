@@ -25,6 +25,5 @@ Example for a www.limitlessled.com Wi-Fi bridge at 192.168.1.100 to turn on all 
 Download
 --------
 
-I hope to publish a version to the Play store in the next few days.
+It's available on the Play store as [UDP Sender](https://play.google.com/store/apps/details?id=com.hastarin.android.udpsender).
 
-Meanwhile if you're happy installing from Unknown sources you can download the [UDPSender.apk](https://www.dropbox.com/s/a4ay66co9kq2n3f/android-udpsender.apk).
