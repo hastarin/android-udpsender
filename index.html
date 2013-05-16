@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Android-udpsender : Simple application to allow sending UDP packets directly or via an Intent.ACTION_SENDTO with a udp://host:port/data format URI." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Android-udpsender</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/hastarin/android-udpsender">View on GitHub</a>
+
+          <h1 id="project_title">Android-udpsender</h1>
+          <h2 id="project_tagline">Simple application to allow sending UDP packets directly or via an Intent.ACTION_SENDTO with a udp://host:port/data format URI.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/hastarin/android-udpsender/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/hastarin/android-udpsender/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>android-udpsender</h1>
+
+<p>Simple application to allow sending UDP packets.  </p>
+
+<p>Supports the implicit <a href="http://developer.android.com/reference/android/content/Intent.html">Intent</a> <em>Intent.ACTION_SENDTO</em> with a <em>udp://host:port/data</em> format URI.  </p>
+
+<ul>
+<li>data is treated as hex if it starts with 0x.<br>
+</li>
+<li>If a string starting with 0x is to be sent it can be escaped as \0x</li>
+</ul><h2>Tasker Integration</h2>
+
+<p>UDP packets can be sent via <a href="http://tasker.dinglisch.net/">Tasker</a> with the Misc/Send Intent action.</p>
+
+<p>Just set it up as follows:</p>
+
+<ul>
+<li>Action = android.intent.action.SENDTO</li>
+<li>Data = udp://host:port/data</li>
+<li>Target = Activity</li>
+</ul><p>Example for a <a href="http://www.limitlessled.com">www.limitlessled.com</a> Wi-Fi bridge at 192.168.1.100 to turn on all the white LEDs</p>
+
+<ul>
+<li>Action = android.intent.action.SENDTO</li>
+<li>Data = udp://192.168.1.100:50000/0x350055</li>
+<li>Target = Activity</li>
+</ul><h2>Download</h2>
+
+<p>I hope to publish a version to the Play store in the next few days.</p>
+
+<p>Meanwhile if you're happy installing from Unknown sources you can download the <a href="https://www.dropbox.com/s/g2lp20e17qous29/UDPSender.apk">UDPSender.apk</a>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Android-udpsender maintained by <a href="https://github.com/hastarin">hastarin</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
