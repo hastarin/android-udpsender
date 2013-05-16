@@ -51,9 +51,11 @@ public class SendToUriActivity extends Activity {
 
 		Intent intent = getIntent();
 		final Uri uri = intent.getData();
+        if (uri == null) return;
 		//Log.v(getString(R.string.app_name), "Intent received " + uri.toString());
 		String msg = uri.getLastPathSegment();
-		byte[] msgBytes = msg.getBytes();
+        if(msg == null) return;
+        byte[] msgBytes = msg.getBytes();
 		if (msg.startsWith("\\0x")) {
 			msg = msg.replace("\\0x", "0x");
 			msgBytes = msg.getBytes();
@@ -70,12 +72,12 @@ public class SendToUriActivity extends Activity {
 		new Thread(new Runnable() {
 			public void run() {
 				try {
-					InetAddress serverAddr = InetAddress.getByName(uri
+					InetAddress serverAddress = InetAddress.getByName(uri
 							.getHost());
-					//Log.v(getString(R.string.app_name), serverAddr.getHostAddress());
+					//Log.v(getString(R.string.app_name), serverAddress.getHostAddress());
 					DatagramSocket socket = new DatagramSocket();
 					DatagramPacket packet = new DatagramPacket(buf, buf.length,
-							serverAddr, uri.getPort());
+							serverAddress, uri.getPort());
 					socket.send(packet);
 					socket.close();
 				} catch (UnknownHostException e) {
