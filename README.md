@@ -27,4 +27,4 @@ Download
 
 I hope to publish a version to the Play store in the next few days.
 
-Meanwhile if you're happy installing from Unknown sources you can download the [UDPSender.apk](https://www.dropbox.com/s/g2lp20e17qous29/UDPSender.apk).
+Meanwhile if you're happy installing from Unknown sources you can download the [UDPSender.apk](https://www.dropbox.com/s/a4ay66co9kq2n3f/android-udpsender.apk).
