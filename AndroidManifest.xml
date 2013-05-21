@@ -8,9 +8,8 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
-    <!-- minSdkVersion is 8 due to Locale plugin support -->
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="4"
         android:targetSdkVersion="17"/>
 
     <!-- This allows the plug-in to appear on non-touchscreen devices like Google TV. -->
