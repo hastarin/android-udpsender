@@ -10,9 +10,23 @@ It supports the implicit [Intent](http://developer.android.com/reference/android
 * data is treated as hex if it starts with 0x.  
 * If a string starting with 0x is to be sent it can be escaped as \0x
 
+<b>As of v1.1</b> 
+
+* Also acts as a plugin for Locale and Tasker.  
+* Variable replacement is supported for the Tasker plugin in the text field.
+* Changed theme to Holo (Dark)
+* Removed unused permissions
+* Various tweaks/fixes
+
+
 Tasker Integration
 ------------------
-UDP packets can be sent via [Tasker](http://tasker.dinglisch.net/) with the Misc/Send Intent action.
+Tasker plugin support is now complete and should be straight forward to use.
+
+![Tasker Plugin](https://raw.github.com/hastarin/android-udpsender/screenshots/screenshots/TaskerPlugin.png)
+
+
+Alternatively UDP packets can be sent via [Tasker](http://tasker.dinglisch.net/) with the Misc/Send Intent action.
 
 Just set it up as follows:
 * Action = android.intent.action.SENDTO
@@ -26,6 +40,7 @@ Example for a www.limitlessled.com Wi-Fi bridge at 192.168.1.100 to turn on all 
 * Data = udp://192.168.1.100:50000/0x350055
 * Target = Activity
 
+
 Tasker Example Project
 ----------------------
 
@@ -37,4 +52,3 @@ You'll need to edit it and insert your own Weather Underground API key instead o
 See http://www.wunderground.com/weather/api/d/docs for more info on getting one.
 
 It's used by the "Get Sunrise/set" which you can call once a day to update the global variables.  I use this in "Check Night Time" to only turn my entry light on at night when I arrive home and connect to my Wi-Fi.
-
