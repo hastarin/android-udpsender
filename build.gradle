@@ -4,11 +4,13 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:0.4'
+        compile file('libs/locale-api.jar')
     }
 }
 apply plugin: 'android'
 
 dependencies {
+    compile file('libs/locale-api.jar')
 }
 
 android {
@@ -16,7 +18,7 @@ android {
     buildToolsVersion "17"
 
     defaultConfig {
-        minSdkVersion 4
+        minSdkVersion 8
         targetSdkVersion 17
     }
     sourceSets {

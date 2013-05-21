@@ -1,10 +1,10 @@
 package com.hastarin.android.udpsender;
 
-import android.net.Uri;
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
@@ -59,9 +59,6 @@ public class MainActivity extends Activity {
 	    if (dataHex.length() >= 2) {
 	    	uriString += Uri.encode("0x" + dataHex);
 	    } else {
-	    	if(dataText.startsWith("0x")) {
-	    		dataText = "\\" + dataText;
-	    	}
 	    	uriString += Uri.encode(dataText);
 	    }
 	    Uri uri = Uri.parse(uriString);

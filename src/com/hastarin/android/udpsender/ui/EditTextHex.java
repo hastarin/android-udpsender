@@ -1,4 +1,4 @@
-package com.hastarin.android.udpsender;
+package com.hastarin.android.udpsender.ui;
 
 import android.content.Context;
 import android.text.Editable;
@@ -26,7 +26,7 @@ public class EditTextHex extends EditText {
 	}
 	
 	private void initialize() {
-		setInputType(InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS);
+        setInputType(InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS|InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS|InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
 		setFilters(new InputFilter[] { new InputFilter() {
 			@Override
 			public CharSequence filter(CharSequence source, int start, int end,

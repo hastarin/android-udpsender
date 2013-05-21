@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android-udpsender.iml" filepath="$PROJECT_DIR$/android-udpsender.iml" />
+      <module fileurl="file://$USER_HOME$/workspace/toast/locale-api/locale-api.iml" filepath="$USER_HOME$/workspace/toast/locale-api/locale-api.iml" />
     </modules>
   </component>
 </project>

@@ -1,12 +1,12 @@
-package com.hastarin.android.udpsender;
+package com.hastarin.android.udpsender.ui;
 
 import android.content.Context;
-import android.widget.EditText;
 import android.text.Editable;
-import android.text.InputType;
 import android.text.InputFilter;
+import android.text.InputType;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
+import android.widget.EditText;
 
 public class EditTextIPAddress extends EditText {
 
@@ -28,21 +28,21 @@ public class EditTextIPAddress extends EditText {
 	}
 
 	private void initialize() {
-		setInputType(InputType.TYPE_CLASS_PHONE);
-		setFilters(new InputFilter[] { new InputFilter() {
+        setInputType(InputType.TYPE_CLASS_PHONE);
+        setFilters(new InputFilter[] { new InputFilter() {
 			@Override
 			public CharSequence filter(CharSequence source, int start, int end,
-					android.text.Spanned dest, int dstart, int dend) {
+					android.text.Spanned destination, int dstart, int dend) {
 				if (end > start) {
-					String destTxt = dest.toString();
-					String resultingTxt = destTxt.substring(0, dstart)
+					String destinationString= destination.toString();
+					String resultingText = destinationString.substring(0, dstart)
 							+ source.subSequence(start, end)
-							+ destTxt.substring(dend);
-					if (!resultingTxt
+							+ destinationString.substring(dend);
+					if (!resultingText
 							.matches("^\\d{1,3}(\\.(\\d{1,3}(\\.(\\d{1,3}(\\.(\\d{1,3})?)?)?)?)?)?")) {
 						return "";
 					} else {
-						String[] splits = resultingTxt.split("\\.");
+						String[] splits = resultingText.split("\\.");
 						for (int i = 0; i < splits.length; i++) {
 							if (Integer.valueOf(splits[i]) > 255) {
 								return "";

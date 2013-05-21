@@ -51,6 +51,39 @@
         android:text="@string/label_text"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
 
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_text"
+        android:inputType="text"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextData"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_hex"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <com.hastarin.android.udpsender.ui.EditTextHex
+        android:id="@+id/editTextHexData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_hex"
+        android:inputType="phone"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignRight="@+id/editTextData"/>
+
+
     <Button
         android:id="@+id/buttonSend"
         android:layout_width="wrap_content"
@@ -78,41 +111,5 @@
         android:layout_below="@+id/editTextHexData"
         android:text="@string/label_hex_default"
         android:textAppearance="?android:attr/textAppearanceSmall"/>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_below="@+id/editTextData"
-        android:layout_marginTop="22dp"
-        android:text="@string/label_hex"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <com.hastarin.android.udpsender.ui.EditTextHex
-        android:id="@+id/editTextHexData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextData"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/textView4"
-        android:ems="10"
-        android:hint="@string/hint_hex"
-        android:inputType="phone" >
-
-        <requestFocus />
-    </com.hastarin.android.udpsender.ui.EditTextHex>
-
-    <EditText
-        android:id="@+id/editTextData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/textView3"
-        android:ems="10"
-        android:hint="@string/hint_text"
-        android:inputType="text" />
 
 </RelativeLayout>
