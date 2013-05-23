@@ -23,6 +23,7 @@ local.properties
 *.iws
 .idea/workspace.xml
 .idea/tasks.xml
+out/
 
 # Proguard logs
 proguard_logs/
