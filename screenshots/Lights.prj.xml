@@ -1,9 +1,22 @@
-<TaskerData sr="" dvi="1" tv="4.0u1m">
+<TaskerData sr="" dvi="1" tv="4.1b1m">
+	<Profile sr="prof38" ve="2">
+		<cdate>1368615920391</cdate>
+		<edate>1368615920391</edate>
+		<id>38</id>
+		<mid0>37</mid0>
+		<Time sr="con0">
+			<fh>2</fh>
+			<fm>0</fm>
+			<th>2</th>
+			<tm>1</tm>
+		</Time>
+	</Profile>
 	<Project sr="proj0">
 		<cdate>1368604325180</cdate>
 		<name>Lights</name>
+		<pids>38</pids>
 		<scenes>All Lights</scenes>
-		<tids>56,51,22,68,41,55,81,15,28,76,64,48,67,54,65,43,63,26,50,53,72,62,47,75,25,24,61,33,74,82,70,35,77,69,52,42,58,31,45,36,29,57,60,66,59,78,37,84,27,49,40,46,83,34,39,44,71,80</tids>
+		<tids>55,78,44,41,51,72,67,53,85,50,83,76,81,52,48,45,80,42,88,27,64,34,36,56,65,75,29,66,46,82,28,68,89,22,25,43,15,60,57,49,40,37,63,26,87,91,31,61,62,24,71,77,39,69,59,84,58,54,90,74,70,73,33,47,35</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<nme>hd_aaa_ext_bulb</nme>
@@ -12,174 +25,45 @@
 	<Scene sr="sceneAll Lights">
 		<backColour>-16711423</backColour>
 		<cdate>1368619138541</cdate>
-		<edate>1369011919426</edate>
-		<heightLand>-1</heightLand>
-		<heightPort>1644</heightPort>
+		<edate>1369609265953</edate>
+		<gridSize>20</gridSize>
+		<heightLand>1079</heightLand>
+		<heightPort>1896</heightPort>
 		<nme>All Lights</nme>
-		<widthLand>-1</widthLand>
+		<widthLand>1902</widthLand>
 		<widthPort>1062</widthPort>
-		<ImageElement sr="elements0">
-			<flags>6</flags>
-			<geom>0,0,1062,1644,-1,-1,-1,-1</geom>
-			<Str sr="arg0" ve="3">Image1</Str>
-			<Img sr="arg1" ve="2"/>
-			<Int sr="arg2" val="255"/>
-			<RectElement sr="background">
-				<flags>4</flags>
-				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
-				<Str sr="arg0" ve="3"/>
-				<Int sr="arg1" val="3"/>
-				<Str sr="arg2" ve="3">#771020E3</Str>
-				<Str sr="arg3" ve="3">#77263136</Str>
-				<Int sr="arg4" val="0"/>
-				<Str sr="arg5" ve="3">#FF000000</Str>
-				<Int sr="arg6" val="0"/>
-				<Int sr="arg7" val="0"/>
-			</RectElement>
-		</ImageElement>
-		<ButtonElement sr="elements1">
-			<clickTask>34</clickTask>
+		<RectElement sr="elements0">
 			<flags>4</flags>
-			<geom>75,0,418,276,-1,-1,-1,-1</geom>
-			<longclickTask>35</longclickTask>
-			<Str sr="arg0" ve="3">On</Str>
-			<Str sr="arg1" ve="3">Lights on</Str>
-			<Int sr="arg2" val="16"/>
-			<Int sr="arg3" val="100"/>
-			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
-			<Int sr="arg5" val="2"/>
-			<Img sr="arg6" ve="2">
-				<nme>hd_aaa_ext_bulb</nme>
-			</Img>
-		</ButtonElement>
+			<geom>0,0,1061,1066,0,0,1060,1066</geom>
+			<strokeTask>87</strokeTask>
+			<Str sr="arg0" ve="3">Rectangle4</Str>
+			<Int sr="arg1" val="3"/>
+			<Str sr="arg2" ve="3">#B0F3CC96</Str>
+			<Str sr="arg3" ve="3">#2699B4FD</Str>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="3"/>
+			<Int sr="arg7" val="0"/>
+			<StrokeFilter sr="filter2">
+				<minLength>106</minLength>
+			</StrokeFilter>
+		</RectElement>
+		<RectElement sr="elements1">
+			<flags>4</flags>
+			<geom>66,888,277,139,60,819,277,139</geom>
+			<Str sr="arg0" ve="3">Rectangle2</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#94FFF0AA</Str>
+			<Str sr="arg3" ve="3">#77333333</Str>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
 		<ButtonElement sr="elements10">
-			<clickTask>61</clickTask>
-			<flags>4</flags>
-			<geom>813,993,222,197,-1,-1,-1,-1</geom>
-			<longclickTask>62</longclickTask>
-			<Str sr="arg0" ve="3">Button10</Str>
-			<Str sr="arg1" ve="3">Lounge</Str>
-			<Int sr="arg2" val="16"/>
-			<Int sr="arg3" val="100"/>
-			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
-			<Int sr="arg5" val="0"/>
-			<Img sr="arg6" ve="2">
-				<nme>hd_aaa_ext_armchair</nme>
-			</Img>
-		</ButtonElement>
-		<ButtonElement sr="elements11">
-			<clickTask>77</clickTask>
-			<flags>4</flags>
-			<geom>813,1214,222,197,-1,-1,-1,-1</geom>
-			<longclickTask>65</longclickTask>
-			<Str sr="arg0" ve="3">Button11</Str>
-			<Str sr="arg1" ve="3">Front</Str>
-			<Int sr="arg2" val="16"/>
-			<Int sr="arg3" val="100"/>
-			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
-			<Int sr="arg5" val="0"/>
-			<Img sr="arg6" ve="2"/>
-		</ButtonElement>
-		<ButtonElement sr="elements12">
-			<clickTask>78</clickTask>
-			<flags>4</flags>
-			<geom>813,1435,222,197,-1,-1,-1,-1</geom>
-			<longclickTask>66</longclickTask>
-			<Str sr="arg0" ve="3">Button111</Str>
-			<Str sr="arg1" ve="3">Rear</Str>
-			<Int sr="arg2" val="16"/>
-			<Int sr="arg3" val="100"/>
-			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
-			<Int sr="arg5" val="0"/>
-			<Img sr="arg6" ve="2"/>
-		</ButtonElement>
-		<ButtonElement sr="elements13">
-			<clickTask>83</clickTask>
-			<flags>4</flags>
-			<geom>567,1214,197,197,-1,-1,-1,-1</geom>
-			<longclickTask>84</longclickTask>
-			<Str sr="arg0" ve="3">Button81</Str>
-			<Str sr="arg1" ve="3">Hall</Str>
-			<Int sr="arg2" val="16"/>
-			<Int sr="arg3" val="100"/>
-			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
-			<Int sr="arg5" val="0"/>
-			<Img sr="arg6" ve="2"/>
-		</ButtonElement>
-		<ButtonElement sr="elements2">
-			<clickTask>36</clickTask>
-			<flags>4</flags>
-			<geom>567,0,418,280,-1,-1,-1,-1</geom>
-			<longclickTask>42</longclickTask>
-			<Str sr="arg0" ve="3">Off</Str>
-			<Str sr="arg1" ve="3">Lights off</Str>
-			<Int sr="arg2" val="16"/>
-			<Int sr="arg3" val="100"/>
-			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
-			<Int sr="arg5" val="2"/>
-			<Img sr="arg6" ve="2">
-				<nme>hd_aaa_ext_io</nme>
-			</Img>
-		</ButtonElement>
-		<ButtonElement sr="elements3">
-			<clickTask>15</clickTask>
-			<flags>4</flags>
-			<geom>75,304,418,295,-1,-1,-1,-1</geom>
-			<longclickTask>70</longclickTask>
-			<Str sr="arg0" ve="3">Button3</Str>
-			<Str sr="arg1" ve="3">Dimmer</Str>
-			<Int sr="arg2" val="16"/>
-			<Int sr="arg3" val="100"/>
-			<Str sr="arg4" ve="3">#FFFAEAEA</Str>
-			<Int sr="arg5" val="2"/>
-			<Img sr="arg6" ve="2">
-				<nme>hd_device_access_bightness_low</nme>
-			</Img>
-		</ButtonElement>
-		<ButtonElement sr="elements4">
-			<clickTask>31</clickTask>
-			<flags>4</flags>
-			<geom>567,304,418,295,-1,-1,-1,-1</geom>
-			<longclickTask>69</longclickTask>
-			<Str sr="arg0" ve="3">Button4</Str>
-			<Str sr="arg1" ve="3">Brighter</Str>
-			<Int sr="arg2" val="16"/>
-			<Int sr="arg3" val="100"/>
-			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
-			<Int sr="arg5" val="2"/>
-			<Img sr="arg6" ve="2">
-				<nme>hd_device_access_brightness_high</nme>
-			</Img>
-		</ButtonElement>
-		<ButtonElement sr="elements5">
-			<clickTask>22</clickTask>
-			<flags>4</flags>
-			<geom>567,624,418,320,-1,-1,-1,-1</geom>
-			<longclickTask>74</longclickTask>
-			<Str sr="arg0" ve="3">Button5</Str>
-			<Str sr="arg1" ve="3">Cooler</Str>
-			<Int sr="arg2" val="16"/>
-			<Int sr="arg3" val="100"/>
-			<Str sr="arg4" ve="3">#FFEBF2FF</Str>
-			<Int sr="arg5" val="0"/>
-			<Img sr="arg6" ve="2"/>
-		</ButtonElement>
-		<ButtonElement sr="elements6">
-			<clickTask>33</clickTask>
-			<flags>4</flags>
-			<geom>75,624,418,320,-1,-1,-1,-1</geom>
-			<Str sr="arg0" ve="3">Button6</Str>
-			<Str sr="arg1" ve="3">Warmer</Str>
-			<Int sr="arg2" val="16"/>
-			<Int sr="arg3" val="100"/>
-			<Str sr="arg4" ve="3">#FFFFE8BA</Str>
-			<Int sr="arg5" val="0"/>
-			<Img sr="arg6" ve="2"/>
-		</ButtonElement>
-		<ButtonElement sr="elements7">
 			<clickTask>44</clickTask>
 			<flags>4</flags>
-			<geom>26,993,222,197,-1,-1,-1,-1</geom>
+			<geom>717,1145,277,197,1659,259,240,197</geom>
 			<longclickTask>45</longclickTask>
 			<Str sr="arg0" ve="3">Button7</Str>
 			<Str sr="arg1" ve="3">Master</Str>
@@ -189,10 +73,10 @@
 			<Int sr="arg5" val="0"/>
 			<Img sr="arg6" ve="2"/>
 		</ButtonElement>
-		<ButtonElement sr="elements8">
+		<ButtonElement sr="elements11">
 			<clickTask>46</clickTask>
 			<flags>4</flags>
-			<geom>296,993,197,197,-1,-1,-1,-1</geom>
+			<geom>717,1382,277,197,1659,499,240,197</geom>
 			<longclickTask>49</longclickTask>
 			<Str sr="arg0" ve="3">Button8</Str>
 			<Str sr="arg1" ve="3">Entry</Str>
@@ -202,16 +86,237 @@
 			<Int sr="arg5" val="0"/>
 			<Img sr="arg6" ve="2"/>
 		</ButtonElement>
-		<ButtonElement sr="elements9">
+		<ButtonElement sr="elements12">
 			<clickTask>57</clickTask>
 			<flags>4</flags>
-			<geom>567,993,197,197,-1,-1,-1,-1</geom>
+			<geom>46,1145,277,198,1079,259,240,198</geom>
 			<longclickTask>58</longclickTask>
 			<Str sr="arg0" ve="3">Button9</Str>
 			<Str sr="arg1" ve="3">Bath</Str>
 			<Int sr="arg2" val="16"/>
 			<Int sr="arg3" val="100"/>
 			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg5" val="0"/>
+			<Img sr="arg6" ve="2"/>
+		</ButtonElement>
+		<ButtonElement sr="elements13">
+			<clickTask>61</clickTask>
+			<flags>4</flags>
+			<geom>382,1145,277,197,1379,259,240,197</geom>
+			<longclickTask>62</longclickTask>
+			<Str sr="arg0" ve="3">Button10</Str>
+			<Str sr="arg1" ve="3">Lounge</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg5" val="0"/>
+			<Img sr="arg6" ve="2"/>
+		</ButtonElement>
+		<ButtonElement sr="elements14">
+			<clickTask>77</clickTask>
+			<flags>4</flags>
+			<geom>382,1382,277,197,1379,499,240,197</geom>
+			<longclickTask>65</longclickTask>
+			<Str sr="arg0" ve="3">Button11</Str>
+			<Str sr="arg1" ve="3">Front</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg5" val="0"/>
+			<Img sr="arg6" ve="2"/>
+		</ButtonElement>
+		<ButtonElement sr="elements15">
+			<clickTask>78</clickTask>
+			<flags>4</flags>
+			<geom>382,1619,277,197,1379,739,240,197</geom>
+			<longclickTask>66</longclickTask>
+			<Str sr="arg0" ve="3">Button111</Str>
+			<Str sr="arg1" ve="3">Rear</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg5" val="0"/>
+			<Img sr="arg6" ve="2"/>
+		</ButtonElement>
+		<ButtonElement sr="elements16">
+			<clickTask>83</clickTask>
+			<flags>4</flags>
+			<geom>46,1382,277,197,1079,499,240,197</geom>
+			<longclickTask>84</longclickTask>
+			<Str sr="arg0" ve="3">Button81</Str>
+			<Str sr="arg1" ve="3">Hall</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg5" val="0"/>
+			<Img sr="arg6" ve="2"/>
+		</ButtonElement>
+		<ImageElement sr="elements17">
+			<clickTask>73</clickTask>
+			<flags>4</flags>
+			<geom>26,0,139,139,26,0,139,139</geom>
+			<Str sr="arg0" ve="3">Image1</Str>
+			<Img sr="arg1" ve="2">
+				<cls>com.hastarin.android.udpsender.MainActivity</cls>
+				<pkg>com.hastarin.android.udpsender</pkg>
+			</Img>
+			<Int sr="arg2" val="255"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3">#77333333</Str>
+				<Str sr="arg3" ve="3">#77333333</Str>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</ImageElement>
+		<ImageElement sr="elements18">
+			<clickTask>85</clickTask>
+			<flags>4</flags>
+			<geom>923,0,139,139,1759,0,139,139</geom>
+			<Str sr="arg0" ve="3">Image2</Str>
+			<Img sr="arg1" ve="2">
+				<nme>hd_ab_content_remove</nme>
+			</Img>
+			<Int sr="arg2" val="255"/>
+		</ImageElement>
+		<ButtonElement sr="elements19">
+			<clickTask>88</clickTask>
+			<flags>4</flags>
+			<geom>717,1619,277,198,1659,739,240,198</geom>
+			<longclickTask>89</longclickTask>
+			<Str sr="arg0" ve="3">Button91</Str>
+			<Str sr="arg1" ve="3">Guest</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg5" val="0"/>
+			<Img sr="arg6" ve="2"/>
+		</ButtonElement>
+		<RectElement sr="elements2">
+			<flags>4</flags>
+			<geom>362,1125,316,711,1359,239,280,711</geom>
+			<Str sr="arg0" ve="3">Rectangle5</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#77403E3E</Str>
+			<Str sr="arg3" ve="3">#77333333</Str>
+			<Int sr="arg4" val="3"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="20"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<ButtonElement sr="elements20">
+			<clickTask>90</clickTask>
+			<flags>4</flags>
+			<geom>46,1619,277,198,1079,739,240,198</geom>
+			<longclickTask>91</longclickTask>
+			<Str sr="arg0" ve="3">Button92</Str>
+			<Str sr="arg1" ve="3">Office</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg5" val="0"/>
+			<Img sr="arg6" ve="2"/>
+		</ButtonElement>
+		<RectElement sr="elements3">
+			<flags>4</flags>
+			<geom>698,888,277,139,700,819,277,139</geom>
+			<Str sr="arg0" ve="3">Rectangle3</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FFD7F7FF</Str>
+			<Str sr="arg3" ve="3">#77333333</Str>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<ButtonElement sr="elements4">
+			<clickTask>34</clickTask>
+			<flags>4</flags>
+			<geom>678,177,316,177,678,177,316,177</geom>
+			<longclickTask>35</longclickTask>
+			<Str sr="arg0" ve="3">On</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="150"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg5" val="0"/>
+			<Img sr="arg6" ve="2">
+				<nme>hd_aaa_ext_bulb</nme>
+			</Img>
+		</ButtonElement>
+		<ButtonElement sr="elements5">
+			<clickTask>36</clickTask>
+			<flags>4</flags>
+			<geom>678,335,316,177,678,335,316,177</geom>
+			<longclickTask>42</longclickTask>
+			<Str sr="arg0" ve="3">Off</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="150"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg5" val="0"/>
+			<Img sr="arg6" ve="2">
+				<nme>hd_aaa_ext_io</nme>
+			</Img>
+		</ButtonElement>
+		<ButtonElement sr="elements6">
+			<clickTask>15</clickTask>
+			<flags>4</flags>
+			<geom>46,335,316,177,46,335,316,177</geom>
+			<longclickTask>70</longclickTask>
+			<Str sr="arg0" ve="3">Button3</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="150"/>
+			<Str sr="arg4" ve="3">#FFFAEAEA</Str>
+			<Int sr="arg5" val="0"/>
+			<Img sr="arg6" ve="2">
+				<nme>hd_device_access_bightness_low</nme>
+			</Img>
+		</ButtonElement>
+		<ButtonElement sr="elements7">
+			<clickTask>31</clickTask>
+			<flags>4</flags>
+			<geom>46,177,316,178,46,177,316,178</geom>
+			<longclickTask>69</longclickTask>
+			<Str sr="arg0" ve="3">Button4</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="120"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg5" val="0"/>
+			<Img sr="arg6" ve="2">
+				<nme>hd_device_access_brightness_high</nme>
+			</Img>
+		</ButtonElement>
+		<ButtonElement sr="elements8">
+			<clickTask>22</clickTask>
+			<flags>4</flags>
+			<geom>678,868,316,178,680,799,316,178</geom>
+			<longclickTask>74</longclickTask>
+			<Str sr="arg0" ve="3">Button5</Str>
+			<Str sr="arg1" ve="3">Cooler</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Int sr="arg5" val="0"/>
+			<Img sr="arg6" ve="2"/>
+		</ButtonElement>
+		<ButtonElement sr="elements9">
+			<clickTask>33</clickTask>
+			<flags>4</flags>
+			<geom>46,868,316,178,40,799,316,178</geom>
+			<longclickTask>80</longclickTask>
+			<Str sr="arg0" ve="3">Button6</Str>
+			<Str sr="arg1" ve="3">Warmer</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
 			<Int sr="arg5" val="0"/>
 			<Img sr="arg6" ve="2"/>
 		</ButtonElement>
@@ -272,7 +377,7 @@
 	</Task>
 	<Task sr="task25">
 		<cdate>1368604338800</cdate>
-		<edate>1368910654105</edate>
+		<edate>1369585272692</edate>
 		<id>25</id>
 		<nme>Bedroom Off</nme>
 		<pri>10</pri>
@@ -295,7 +400,7 @@
 	</Task>
 	<Task sr="task26">
 		<cdate>1368601702139</cdate>
-		<edate>1368910698212</edate>
+		<edate>1369585284442</edate>
 		<id>26</id>
 		<nme>All On</nme>
 		<pri>10</pri>
@@ -321,7 +426,7 @@
 	</Task>
 	<Task sr="task27">
 		<cdate>1368601702139</cdate>
-		<edate>1368910711766</edate>
+		<edate>1369585298827</edate>
 		<id>27</id>
 		<nme>All Off</nme>
 		<pri>10</pri>
@@ -451,6 +556,7 @@
 		<cdate>1368621929292</cdate>
 		<edate>1368621929292</edate>
 		<id>36</id>
+		<pri>11</pri>
 		<Action sr="act0" ve="3">
 			<code>130</code>
 			<Str sr="arg0" ve="3">All Off</Str>
@@ -463,7 +569,7 @@
 	</Task>
 	<Task sr="task37">
 		<cdate>1368613238688</cdate>
-		<edate>1368617023414</edate>
+		<edate>1369609733869</edate>
 		<id>37</id>
 		<nme>Get Sunrise/set</nme>
 		<pri>10</pri>
@@ -474,7 +580,7 @@
 		</Action>
 		<Action sr="act1" ve="3">
 			<code>118</code>
-            <Str sr="arg0" ve="3">api.wunderground.com/api/<YOURAPIKEYHERE>/astronomy/q/%LOCN.json</Str>
+			<Str sr="arg0" ve="3">api.wunderground.com/api/&lt;YOURAPIKEYHERE&gt;/astronomy/q/%LOCN.json</Str>
 			<Str sr="arg1" ve="3"/>
 			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
@@ -506,6 +612,9 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 				<var>%</var>
 			</Int>
 		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_device_access_data_usage</nme>
+		</Img>
 	</Task>
 	<Task sr="task39">
 		<cdate>1368616256775</cdate>
@@ -621,18 +730,31 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 	</Task>
 	<Task sr="task43">
 		<cdate>1368601702139</cdate>
-		<edate>1368910714987</edate>
+		<edate>1369419159118</edate>
 		<id>43</id>
 		<nme>All Night</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
+			<code>137</code>
+			<lhs>%WIFII</lhs>
+			<op>2</op>
+			<rhs>*C86241*</rhs>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="3">
+			<code>548</code>
+			<Str sr="arg0" ve="3">All Lights Night Mode</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="3">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%CODE</Str>
 			<Str sr="arg1" ve="3">390055</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act1" ve="3">
+		<Action sr="act3" ve="3">
 			<code>130</code>
 			<Str sr="arg0" ve="3">Send Code</Str>
 			<Int sr="arg1" val="0"/>
@@ -641,14 +763,14 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
 		</Action>
-		<Action sr="act2" ve="3">
+		<Action sr="act4" ve="3">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%CODE</Str>
 			<Str sr="arg1" ve="3">B90055</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act3" ve="3">
+		<Action sr="act5" ve="3">
 			<code>130</code>
 			<Str sr="arg0" ve="3">Send Code</Str>
 			<Int sr="arg1" val="0"/>
@@ -705,17 +827,17 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 	</Task>
 	<Task sr="task47">
 		<cdate>1368619427172</cdate>
-		<edate>1368909705790</edate>
+		<edate>1369209411898</edate>
 		<id>47</id>
 		<nme>Master</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
 			<code>47</code>
 			<Str sr="arg0" ve="3">All Lights</Str>
-			<Int sr="arg1" val="2"/>
+			<Int sr="arg1" val="4"/>
 			<Int sr="arg2" val="100"/>
 			<Int sr="arg3" val="100"/>
-			<Int sr="arg4" val="1"/>
+			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="1"/>
 		</Action>
 		<Img sr="icn" ve="2">
@@ -724,18 +846,31 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 	</Task>
 	<Task sr="task48">
 		<cdate>1368601702139</cdate>
-		<edate>1368910708075</edate>
+		<edate>1369419125263</edate>
 		<id>48</id>
 		<nme>All On Full</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
+			<code>137</code>
+			<lhs>%WIFII</lhs>
+			<op>2</op>
+			<rhs>*C86241*</rhs>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="3">
+			<code>548</code>
+			<Str sr="arg0" ve="3">All Lights Full Brightness</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="3">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%CODE</Str>
 			<Str sr="arg1" ve="3">350055</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act1" ve="3">
+		<Action sr="act3" ve="3">
 			<code>130</code>
 			<Str sr="arg0" ve="3">Send Code</Str>
 			<Int sr="arg1" val="0"/>
@@ -744,14 +879,14 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
 		</Action>
-		<Action sr="act2" ve="3">
+		<Action sr="act4" ve="3">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%CODE</Str>
 			<Str sr="arg1" ve="3">B50055</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act3" ve="3">
+		<Action sr="act5" ve="3">
 			<code>130</code>
 			<Str sr="arg0" ve="3">Send Code</Str>
 			<Int sr="arg1" val="0"/>
@@ -780,7 +915,7 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 	</Task>
 	<Task sr="task50">
 		<cdate>1368620309028</cdate>
-		<edate>1368621169396</edate>
+		<edate>1369419046235</edate>
 		<id>50</id>
 		<nme>Cooler</nme>
 		<Action sr="act0" ve="3">
@@ -802,7 +937,7 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 	</Task>
 	<Task sr="task51">
 		<cdate>1368620453729</cdate>
-		<edate>1368621364482</edate>
+		<edate>1369585455486</edate>
 		<id>51</id>
 		<nme>Send Code</nme>
 		<pri>10</pri>
@@ -810,7 +945,7 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<code>130</code>
 			<Str sr="arg0" ve="3">Send Code 90</Str>
 			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="5"/>
+			<Int sr="arg2" val="8"/>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
@@ -819,7 +954,7 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<code>130</code>
 			<Str sr="arg0" ve="3">Send Code 92</Str>
 			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="5"/>
+			<Int sr="arg2" val="7"/>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
@@ -827,7 +962,7 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 	</Task>
 	<Task sr="task52">
 		<cdate>1368620309028</cdate>
-		<edate>1368887500574</edate>
+		<edate>1369228934716</edate>
 		<id>52</id>
 		<nme>Warmer</nme>
 		<pri>10</pri>
@@ -850,7 +985,7 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 	</Task>
 	<Task sr="task53">
 		<cdate>1368620309028</cdate>
-		<edate>1368910722794</edate>
+		<edate>1369224883409</edate>
 		<id>53</id>
 		<nme>Brighter</nme>
 		<pri>10</pri>
@@ -870,10 +1005,13 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
 		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_device_access_brightness_high</nme>
+		</Img>
 	</Task>
 	<Task sr="task54">
 		<cdate>1368620309028</cdate>
-		<edate>1368886827713</edate>
+		<edate>1369585306871</edate>
 		<id>54</id>
 		<nme>Dimmer</nme>
 		<pri>10</pri>
@@ -893,15 +1031,27 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
 		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_device_access_bightness_low</nme>
+		</Img>
 	</Task>
 	<Task sr="task55">
 		<cdate>1368620453729</cdate>
-		<edate>1368909815683</edate>
+		<edate>1369608498073</edate>
 		<id>55</id>
 		<nme>Send Code 90</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
+			<code>137</code>
+			<lhs>%WIFII</lhs>
+			<op>2</op>
+			<rhs>*C86241*</rhs>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="3">
 			<code>877</code>
+			<on>false</on>
 			<Str sr="arg0" ve="3">android.intent.action.SENDTO</Str>
 			<Int sr="arg1" val="0"/>
 			<Str sr="arg2" ve="3"/>
@@ -912,7 +1062,32 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<Str sr="arg7" ve="3"/>
 			<Int sr="arg8" val="1"/>
 		</Action>
-		<Action sr="act1" ve="3">
+		<Action sr="act2" ve="3">
+			<code>5355</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.hastarin.android.udpsender.extra.HEX></com.hastarin.android.udpsender.extra.HEX>
+					<com.hastarin.android.udpsender.extra.HEX-type>java.lang.String</com.hastarin.android.udpsender.extra.HEX-type>
+					<com.hastarin.android.udpsender.extra.HOST>192.168.1.90</com.hastarin.android.udpsender.extra.HOST>
+					<com.hastarin.android.udpsender.extra.HOST-type>java.lang.String</com.hastarin.android.udpsender.extra.HOST-type>
+					<com.hastarin.android.udpsender.extra.INT_VERSION_CODE>2</com.hastarin.android.udpsender.extra.INT_VERSION_CODE>
+					<com.hastarin.android.udpsender.extra.INT_VERSION_CODE-type>java.lang.Integer</com.hastarin.android.udpsender.extra.INT_VERSION_CODE-type>
+					<com.hastarin.android.udpsender.extra.PORT>50000</com.hastarin.android.udpsender.extra.PORT>
+					<com.hastarin.android.udpsender.extra.PORT-type>java.lang.Integer</com.hastarin.android.udpsender.extra.PORT-type>
+					<com.hastarin.android.udpsender.extra.TEXT>0x%CODE</com.hastarin.android.udpsender.extra.TEXT>
+					<com.hastarin.android.udpsender.extra.TEXT-type>java.lang.String</com.hastarin.android.udpsender.extra.TEXT-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>udp://192.168.1.90:50000/0x%CODE</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.hastarin.android.udpsender.extra.TEXT</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.hastarin.android.udpsender</Str>
+			<Str sr="arg2" ve="3">UDP Sender</Str>
+		</Action>
+		<Action sr="act3" ve="3">
 			<code>30</code>
 			<Int sr="arg0" val="50"/>
 			<Int sr="arg1" val="0"/>
@@ -920,15 +1095,28 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
+		<Img sr="icn" ve="2">
+			<cls>com.hastarin.android.udpsender.MainActivity</cls>
+			<pkg>com.hastarin.android.udpsender</pkg>
+		</Img>
 	</Task>
 	<Task sr="task56">
 		<cdate>1368620453729</cdate>
-		<edate>1368909834215</edate>
+		<edate>1369608520022</edate>
 		<id>56</id>
 		<nme>Send Code 92</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
+			<code>137</code>
+			<lhs>%WIFII</lhs>
+			<op>2</op>
+			<rhs>*C86241*</rhs>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="3">
 			<code>877</code>
+			<on>false</on>
 			<Str sr="arg0" ve="3">android.intent.action.SENDTO</Str>
 			<Int sr="arg1" val="0"/>
 			<Str sr="arg2" ve="3"/>
@@ -939,7 +1127,32 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<Str sr="arg7" ve="3"/>
 			<Int sr="arg8" val="1"/>
 		</Action>
-		<Action sr="act1" ve="3">
+		<Action sr="act2" ve="3">
+			<code>5355</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.hastarin.android.udpsender.extra.HEX></com.hastarin.android.udpsender.extra.HEX>
+					<com.hastarin.android.udpsender.extra.HEX-type>java.lang.String</com.hastarin.android.udpsender.extra.HEX-type>
+					<com.hastarin.android.udpsender.extra.HOST>192.168.1.92</com.hastarin.android.udpsender.extra.HOST>
+					<com.hastarin.android.udpsender.extra.HOST-type>java.lang.String</com.hastarin.android.udpsender.extra.HOST-type>
+					<com.hastarin.android.udpsender.extra.INT_VERSION_CODE>2</com.hastarin.android.udpsender.extra.INT_VERSION_CODE>
+					<com.hastarin.android.udpsender.extra.INT_VERSION_CODE-type>java.lang.Integer</com.hastarin.android.udpsender.extra.INT_VERSION_CODE-type>
+					<com.hastarin.android.udpsender.extra.PORT>50000</com.hastarin.android.udpsender.extra.PORT>
+					<com.hastarin.android.udpsender.extra.PORT-type>java.lang.Integer</com.hastarin.android.udpsender.extra.PORT-type>
+					<com.hastarin.android.udpsender.extra.TEXT>0x%CODE</com.hastarin.android.udpsender.extra.TEXT>
+					<com.hastarin.android.udpsender.extra.TEXT-type>java.lang.String</com.hastarin.android.udpsender.extra.TEXT-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>udp://192.168.1.92:50000/0x%CODE</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.hastarin.android.udpsender.extra.TEXT</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.hastarin.android.udpsender</Str>
+			<Str sr="arg2" ve="3">UDP Sender</Str>
+		</Action>
+		<Action sr="act3" ve="3">
 			<code>30</code>
 			<Int sr="arg0" val="50"/>
 			<Int sr="arg1" val="0"/>
@@ -947,11 +1160,16 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
+		<Img sr="icn" ve="2">
+			<cls>com.hastarin.android.udpsender.MainActivity</cls>
+			<pkg>com.hastarin.android.udpsender</pkg>
+		</Img>
 	</Task>
 	<Task sr="task57">
 		<cdate>1368622292992</cdate>
 		<edate>1368622292992</edate>
 		<id>57</id>
+		<pri>11</pri>
 		<Action sr="act0" ve="3">
 			<code>130</code>
 			<Str sr="arg0" ve="3">Bathroom On</Str>
@@ -1174,16 +1392,78 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 	</Task>
 	<Task sr="task67">
 		<cdate>1368886846429</cdate>
-		<edate>1368910761394</edate>
+		<edate>1369419064378</edate>
 		<id>67</id>
 		<nme>Dimmer Ramp</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
-			<code>39</code>
-			<Str sr="arg0" ve="3">%count</Str>
-			<Str sr="arg1" ve="3">1,2,3,4,5,6,7,8,9,0</Str>
+			<code>137</code>
+			<lhs>%WIFII</lhs>
+			<op>2</op>
+			<rhs>*C86241*</rhs>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
 		</Action>
 		<Action sr="act1" ve="3">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Dimming</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act10" ve="3">
+			<code>135</code>
+			<lhs>%count</lhs>
+			<op>3</op>
+			<rhs>%MaxCount</rhs>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">Loop</Str>
+		</Action>
+		<Action sr="act11" ve="3">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act12" ve="3">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Done</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="3">
+			<code>30</code>
+			<Int sr="arg0" val="100"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act3" ve="3">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%count</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="3">
+			<code>547</code>
+			<lhs>%MaxCount</lhs>
+			<op>10</op>
+			<rhs></rhs>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Str sr="arg1" ve="3">10</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act5" ve="3">
+			<code>300</code>
+			<label>Loop</label>
+		</Action>
+		<Action sr="act6" ve="3">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%count</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act7" ve="3">
 			<code>130</code>
 			<Str sr="arg0" ve="3">Dimmer</Str>
 			<Int sr="arg1" val="0"/>
@@ -1192,30 +1472,102 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
 		</Action>
-		<Action sr="act2" ve="3">
+		<Action sr="act8" ve="3">
 			<code>30</code>
+			<Int sr="arg0" val="100"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act9" ve="3">
+			<code>30</code>
+			<on>false</on>
 			<Int sr="arg0" val="150"/>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act3" ve="3">
-			<code>40</code>
-		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_device_access_bightness_low</nme>
+		</Img>
 	</Task>
 	<Task sr="task68">
 		<cdate>1368886846429</cdate>
-		<edate>1368910745265</edate>
+		<edate>1369585500219</edate>
 		<id>68</id>
 		<nme>Brighter Ramp</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
-			<code>39</code>
-			<Str sr="arg0" ve="3">%count</Str>
-			<Str sr="arg1" ve="3">1,2,3,4,5,6,7,8,9,0</Str>
+			<code>137</code>
+			<lhs>%WIFII</lhs>
+			<op>2</op>
+			<rhs>*C86241*</rhs>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
 		</Action>
 		<Action sr="act1" ve="3">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Brightening</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act10" ve="3">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act11" ve="3">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Done</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="3">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%count</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="3">
+			<code>547</code>
+			<lhs>%MaxCount</lhs>
+			<op>10</op>
+			<rhs></rhs>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Str sr="arg1" ve="3">10</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="3">
+			<code>300</code>
+			<label>Loop</label>
+		</Action>
+		<Action sr="act5" ve="3">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%count</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act6" ve="3">
+			<code>559</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%count</Str>
+			<Str sr="arg1" ve="3">com.samsung.SMT:eng-GBR</Str>
+			<Int sr="arg2" val="3"/>
+			<Int sr="arg3" val="5"/>
+			<Int sr="arg4" val="5"/>
+			<Int sr="arg5" val="1"/>
+		</Action>
+		<Action sr="act7" ve="3">
+			<code>30</code>
+			<Int sr="arg0" val="100"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act8" ve="3">
 			<code>130</code>
 			<Str sr="arg0" ve="3">Brighter</Str>
 			<Int sr="arg1" val="0"/>
@@ -1224,17 +1576,18 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
 		</Action>
-		<Action sr="act2" ve="3">
-			<code>30</code>
-			<Int sr="arg0" val="150"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
+		<Action sr="act9" ve="3">
+			<code>135</code>
+			<lhs>%count</lhs>
+			<op>3</op>
+			<rhs>%MaxCount</rhs>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">Loop</Str>
 		</Action>
-		<Action sr="act3" ve="3">
-			<code>40</code>
-		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_device_access_brightness_high</nme>
+		</Img>
 	</Task>
 	<Task sr="task69">
 		<cdate>1368887320372</cdate>
@@ -1266,16 +1619,61 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 	</Task>
 	<Task sr="task71">
 		<cdate>1368886846429</cdate>
-		<edate>1368887481455</edate>
+		<edate>1369419079840</edate>
 		<id>71</id>
 		<nme>Warmer Ramp</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
-			<code>39</code>
-			<Str sr="arg0" ve="3">%count</Str>
-			<Str sr="arg1" ve="3">1,2,3,4,5,6,7,8,9,0</Str>
+			<code>137</code>
+			<lhs>%WIFII</lhs>
+			<op>2</op>
+			<rhs>*C86241*</rhs>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
 		</Action>
 		<Action sr="act1" ve="3">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Warming</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act10" ve="3">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act11" ve="3">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Done</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="3">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%count</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="3">
+			<code>547</code>
+			<lhs>%MaxCount</lhs>
+			<op>10</op>
+			<rhs></rhs>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Str sr="arg1" ve="3">10</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="3">
+			<code>300</code>
+			<label>Loop</label>
+		</Action>
+		<Action sr="act5" ve="3">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%count</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act6" ve="3">
 			<code>130</code>
 			<Str sr="arg0" ve="3">Warmer</Str>
 			<Int sr="arg1" val="0"/>
@@ -1284,30 +1682,90 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
 		</Action>
-		<Action sr="act2" ve="3">
+		<Action sr="act7" ve="3">
 			<code>30</code>
+			<Int sr="arg0" val="100"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act8" ve="3">
+			<code>30</code>
+			<on>false</on>
 			<Int sr="arg0" val="150"/>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act3" ve="3">
-			<code>40</code>
+		<Action sr="act9" ve="3">
+			<code>135</code>
+			<lhs>%count</lhs>
+			<op>3</op>
+			<rhs>%MaxCount</rhs>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">Loop</Str>
 		</Action>
 	</Task>
 	<Task sr="task72">
 		<cdate>1368886846429</cdate>
-		<edate>1368887467862</edate>
+		<edate>1369419053439</edate>
 		<id>72</id>
 		<nme>Cooler Ramp</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
-			<code>39</code>
-			<Str sr="arg0" ve="3">%count</Str>
-			<Str sr="arg1" ve="3">1,2,3,4,5,6,7,8,9,0</Str>
+			<code>137</code>
+			<lhs>%WIFII</lhs>
+			<op>2</op>
+			<rhs>*C86241*</rhs>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
 		</Action>
 		<Action sr="act1" ve="3">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Cooling</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act10" ve="3">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act11" ve="3">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Done</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="3">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%count</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="3">
+			<code>547</code>
+			<lhs>%MaxCount</lhs>
+			<op>10</op>
+			<rhs></rhs>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Str sr="arg1" ve="3">10</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="3">
+			<code>300</code>
+			<label>Loop</label>
+		</Action>
+		<Action sr="act5" ve="3">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%count</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act6" ve="3">
 			<code>130</code>
 			<Str sr="arg0" ve="3">Cooler</Str>
 			<Int sr="arg1" val="0"/>
@@ -1316,16 +1774,48 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
 		</Action>
-		<Action sr="act2" ve="3">
+		<Action sr="act7" ve="3">
 			<code>30</code>
+			<Int sr="arg0" val="100"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act8" ve="3">
+			<code>30</code>
+			<on>false</on>
 			<Int sr="arg0" val="150"/>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act3" ve="3">
-			<code>40</code>
+		<Action sr="act9" ve="3">
+			<code>135</code>
+			<lhs>%count</lhs>
+			<op>3</op>
+			<rhs>%MaxCount</rhs>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">Loop</Str>
+		</Action>
+	</Task>
+	<Task sr="task73">
+		<cdate>1369206693521</cdate>
+		<edate>1369206693521</edate>
+		<id>73</id>
+		<Action sr="act0" ve="3">
+			<code>877</code>
+			<Str sr="arg0" ve="3">android.intent.action.VIEW</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3">market://details?id=com.hastarin.android.udpsender</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="1"/>
 		</Action>
 	</Task>
 	<Task sr="task74">
@@ -1344,7 +1834,7 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 	</Task>
 	<Task sr="task75">
 		<cdate>1368622365633</cdate>
-		<edate>1368909848406</edate>
+		<edate>1369135553950</edate>
 		<id>75</id>
 		<nme>Lounge On Front</nme>
 		<pri>10</pri>
@@ -1367,7 +1857,7 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 	</Task>
 	<Task sr="task76">
 		<cdate>1368622365633</cdate>
-		<edate>1368887786033</edate>
+		<edate>1369608503265</edate>
 		<id>76</id>
 		<nme>Lounge On Rear</nme>
 		<pri>10</pri>
@@ -1417,35 +1907,17 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 		</Action>
 	</Task>
 	<Task sr="task80">
-		<cdate>1368886846429</cdate>
-		<edate>1368887467862</edate>
+		<cdate>1369211286464</cdate>
+		<edate>1369211286464</edate>
 		<id>80</id>
-		<nme>Strobe</nme>
-		<pri>10</pri>
 		<Action sr="act0" ve="3">
-			<code>39</code>
-			<Str sr="arg0" ve="3">%count</Str>
-			<Str sr="arg1" ve="3">1,2,3,4,5,6,7,8,9,0</Str>
-		</Action>
-		<Action sr="act1" ve="3">
 			<code>130</code>
-			<Str sr="arg0" ve="3">Cooler</Str>
+			<Str sr="arg0" ve="3">Warmer Ramp</Str>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="5"/>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
-		</Action>
-		<Action sr="act2" ve="3">
-			<code>30</code>
-			<Int sr="arg0" val="150"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act3" ve="3">
-			<code>40</code>
 		</Action>
 	</Task>
 	<Task sr="task81">
@@ -1515,6 +1987,160 @@ setGlobal( 'SUNSET', sunsetString );</Str>
 		<Action sr="act0" ve="3">
 			<code>130</code>
 			<Str sr="arg0" ve="3">Hall Off</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="5"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task85">
+		<cdate>1369205026707</cdate>
+		<edate>1369205026707</edate>
+		<id>85</id>
+		<Action sr="act0" ve="3">
+			<code>48</code>
+			<Str sr="arg0" ve="3">All Lights</Str>
+		</Action>
+	</Task>
+	<Task sr="task87">
+		<cdate>1369211385664</cdate>
+		<edate>1369211385664</edate>
+		<id>87</id>
+		<Action sr="act0" ve="3">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Str sr="arg1" ve="3">%stroke_len / 106</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="3">
+			<code>548</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="3">
+			<code>130</code>
+			<lhs>%stroke_dir</lhs>
+			<op>1</op>
+			<rhs>*Up*</rhs>
+			<Str sr="arg0" ve="3">Brighter Ramp</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="10"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+		<Action sr="act3" ve="3">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Str sr="arg1" ve="3">%stroke_len / 106</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="3">
+			<code>130</code>
+			<lhs>%stroke_dir</lhs>
+			<op>1</op>
+			<rhs>*Down*</rhs>
+			<Str sr="arg0" ve="3">Dimmer Ramp</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="10"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+		<Action sr="act5" ve="3">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Str sr="arg1" ve="3">%stroke_len / 106</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act6" ve="3">
+			<code>130</code>
+			<lhs>%stroke_dir</lhs>
+			<op>1</op>
+			<rhs>*Left*</rhs>
+			<Str sr="arg0" ve="3">Warmer Ramp</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="10"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+		<Action sr="act7" ve="3">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MaxCount</Str>
+			<Str sr="arg1" ve="3">%stroke_len / 106</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act8" ve="3">
+			<code>130</code>
+			<lhs>%stroke_dir</lhs>
+			<op>1</op>
+			<rhs>*Right*</rhs>
+			<Str sr="arg0" ve="3">Cooler Ramp</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="10"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task88">
+		<cdate>1368622292992</cdate>
+		<edate>1368622292992</edate>
+		<id>88</id>
+		<pri>11</pri>
+		<Action sr="act0" ve="3">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Bathroom On</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="5"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task89">
+		<cdate>1368622305624</cdate>
+		<edate>1368622305624</edate>
+		<id>89</id>
+		<Action sr="act0" ve="3">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Bathroom Off</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="5"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task90">
+		<cdate>1368622292992</cdate>
+		<edate>1368622292992</edate>
+		<id>90</id>
+		<pri>11</pri>
+		<Action sr="act0" ve="3">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Bathroom On</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="5"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task91">
+		<cdate>1368622305624</cdate>
+		<edate>1368622305624</edate>
+		<id>91</id>
+		<Action sr="act0" ve="3">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Bathroom Off</Str>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="5"/>
 			<Str sr="arg3" ve="3"/>
