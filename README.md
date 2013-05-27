@@ -3,7 +3,7 @@ android-udpsender
 
 [UDP Sender](https://play.google.com/store/apps/details?id=com.hastarin.android.udpsender) is a simple application to allow sending UDP packets.
 
-![Landscape Screenshot](https://raw.github.com/hastarin/android-udpsender/screenshots/screenshots/N7Landscape.png)
+![Landscape Screenshot](https://raw.github.com/hastarin/android-udpsender/screenshots/screenshots/S4Landscape.png)
 
 It supports the implicit [Intent](http://developer.android.com/reference/android/content/Intent.html) <b>Intent.ACTION_SENDTO</b> with a <b>udp://host:port/data</b> format URI.  
 
