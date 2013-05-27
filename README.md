@@ -48,14 +48,25 @@ Tasker Example Project
 
 You can get a copy of my current Tasker project (or at least a portion of it) [Lights.prj.xml](https://raw.github.com/hastarin/android-udpsender/screenshots/screenshots/Lights.prj.xml) that I'm using for controlling my lights.
 
-You'll need to edit it and insert your own Weather Underground API key instead of &lt;YOURAPIKEYHERE&gt;.
-See http://www.wunderground.com/weather/api/d/docs for more info on getting one.
-
-It's used by the "Get Sunrise/set" which you can call once a day to update the global variables.  I use this in "Check Night Time" to only turn my entry light on at night when I arrive home and connect to my Wi-Fi.
-
 To give you an idea of how I'm using it I have the following:
 * Gesture control via my launcher (Nova) to turn all lights on/off/full bright/night mode and dim/brighten lights.
 * Using the Scene shown above I can turn all/individual zones on/off and control bright/dim/warm/cool.
 * NOTE: A swipe up/down in the colored square controls a bright/dim ramp and left/right for warm/cool.
 * An NFC tag on my bed that when tapped will turn the lights off, or keep some in night mode if I have guests.
 * When my phone connects to the Wi-Fi, and it's between sunrise and sunset, my entry hall light is turned on.
+
+
+<b>NOTE:</b> *It should be obvious but you will need to edit this to use it*
+
+* Insert your own Weather Underground API key instead of &lt;YOURAPIKEYHERE&gt;.
+
+See http://www.wunderground.com/weather/api/d/docs for more info on getting one.
+
+It's used by the "Get Sunrise/set" which is called once a day to update the global variables.  I use this in "Check Night Time" to only turn my entry light on at night when I arrive home and connect to my Wi-Fi.
+
+* You'll want to replace the string for my SSID with your own.  Search and replace C86241.  Or remove the Stop commands that prevent things working when not on the correct Wi-Fi.
+
+* You'll obviously need to change IPs and Names to suit your setup.
+
+* Finally if you're using a device that has a different size screen (my S4 is 1920x1080) you'll need to edit the scene so it fits and adjust the maths for the gestures.
+
