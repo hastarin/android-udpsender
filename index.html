@@ -1,33 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
     <title>Android-udpsender by hastarin</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
-
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/hastarin/android-udpsender">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/hastarin/android-udpsender/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/hastarin/android-udpsender/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-    <header>
-      <div class="container">
-        <h1>Android-udpsender</h1>
-        <h2>Simple application to allow sending UDP packets directly or via an Intent.ACTION_SENDTO with a udp://host:port/data format URI.</h2>
+    <div class="wrapper">
 
-        <section id="downloads">
-          <a href="https://github.com/hastarin/android-udpsender/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/hastarin/android-udpsender/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/hastarin/android-udpsender" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+      <section>
+        <div id="title">
+          <h1>Android-udpsender</h1>
+          <p>Simple application to allow sending UDP packets directly or via an Intent.ACTION_SENDTO with a udp://host:port/data format URI.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/hastarin">hastarin</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
 
-    <div class="container">
-      <section id="main_content">
         <h1>android-udpsender</h1>
 
 <p><a href="https://play.google.com/store/apps/details?id=com.hastarin.android.udpsender">UDP Sender</a> is a simple application to allow sending UDP packets.</p>
@@ -77,11 +87,6 @@
 
 <p>You can get a copy of my current Tasker project (or at least a portion of it) <a href="https://raw.github.com/hastarin/android-udpsender/screenshots/screenshots/Lights.prj.xml">Lights.prj.xml</a> that I'm using for controlling my lights.</p>
 
-<p>You'll need to edit it and insert your own Weather Underground API key instead of &lt;YOURAPIKEYHERE&gt;.
-See <a href="http://www.wunderground.com/weather/api/d/docs">http://www.wunderground.com/weather/api/d/docs</a> for more info on getting one.</p>
-
-<p>It's used by the "Get Sunrise/set" which you can call once a day to update the global variables.  I use this in "Check Night Time" to only turn my entry light on at night when I arrive home and connect to my Wi-Fi.</p>
-
 <p>To give you an idea of how I'm using it I have the following:</p>
 
 <ul>
@@ -90,10 +95,23 @@ See <a href="http://www.wunderground.com/weather/api/d/docs">http://www.wundergr
 <li>NOTE: A swipe up/down in the colored square controls a bright/dim ramp and left/right for warm/cool.</li>
 <li>An NFC tag on my bed that when tapped will turn the lights off, or keep some in night mode if I have guests.</li>
 <li>When my phone connects to the Wi-Fi, and it's between sunrise and sunset, my entry hall light is turned on.</li>
+</ul><p><b>NOTE:</b> <em>It should be obvious but you will need to edit this to use it</em></p>
+
+<ul>
+<li>Insert your own Weather Underground API key instead of &lt;YOURAPIKEYHERE&gt;.</li>
+</ul><p>See <a href="http://www.wunderground.com/weather/api/d/docs">http://www.wunderground.com/weather/api/d/docs</a> for more info on getting one.</p>
+
+<p>It's used by the "Get Sunrise/set" which is called once a day to update the global variables.  I use this in "Check Night Time" to only turn my entry light on at night when I arrive home and connect to my Wi-Fi.</p>
+
+<ul>
+<li><p>You'll want to replace the string for my SSID with your own.  Search and replace C86241.  Or remove the Stop commands that prevent things working when not on the correct Wi-Fi.</p></li>
+<li><p>You'll obviously need to change IPs and Names to suit your setup.</p></li>
+<li><p>Finally if you're using a device that has a different size screen (my S4 is 1920x1080) you'll need to edit the scene so it fits and adjust the maths for the gestures.</p></li>
 </ul>
       </section>
-    </div>
 
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
