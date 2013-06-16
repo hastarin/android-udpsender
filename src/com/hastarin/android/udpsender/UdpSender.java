@@ -2,6 +2,7 @@ package com.hastarin.android.udpsender;
 
 import android.content.Context;
 import android.net.Uri;
+import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -12,8 +13,9 @@ import static com.hastarin.android.udpsender.HexHelper.bytesToHex;
 import static com.hastarin.android.udpsender.HexHelper.hexStringToBytes;
 
 public class UdpSender {
-
+    final Handler toastHandler = new Handler();
     public void SendTo(final Context context, final Uri uri) {
+
         if (uri == null) return;
         String msg = Uri.decode(uri.getLastPathSegment());
         if(msg == null) return;
@@ -49,17 +51,32 @@ public class UdpSender {
                             serverAddress, uri.getPort());
                     socket.send(packet);
                     socket.close();
-                } catch (UnknownHostException e) {
-                    Toast.makeText(context, e.toString(),
-                            Toast.LENGTH_SHORT).show();
+                } catch (final UnknownHostException e) {
+                    toastHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(context, e.toString(),
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    });
                     e.printStackTrace();
-                } catch (SocketException e) {
-                    Toast.makeText(context, e.toString(),
-                            Toast.LENGTH_SHORT).show();
+                } catch (final SocketException e) {
+                    toastHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(context, e.toString(),
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    });
                     e.printStackTrace();
-                } catch (IOException e) {
-                    Toast.makeText(context, e.toString(),
-                            Toast.LENGTH_SHORT).show();
+                } catch (final IOException e) {
+                    toastHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(context, e.toString(),
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    });
                     e.printStackTrace();
                 }
             }
