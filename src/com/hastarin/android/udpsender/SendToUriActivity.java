@@ -80,17 +80,32 @@ public class SendToUriActivity extends Activity {
 							serverAddress, uri.getPort());
 					socket.send(packet);
 					socket.close();
-				} catch (UnknownHostException e) {
-					Toast.makeText(getApplicationContext(), e.toString(),
-							Toast.LENGTH_SHORT).show();
+				} catch (final UnknownHostException e) {
+                    Activity activity = getParent();
+                    activity.runOnUiThread(new Runnable() {
+                        public void run() {
+                            Toast.makeText(getApplicationContext(), e.toString(),
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    });
 					e.printStackTrace();
-				} catch (SocketException e) {
-					Toast.makeText(getApplicationContext(), e.toString(),
-							Toast.LENGTH_SHORT).show();
+				} catch (final SocketException e) {
+                    Activity activity = getParent();
+                    activity.runOnUiThread(new Runnable() {
+                        public void run() {
+                            Toast.makeText(getApplicationContext(), e.toString(),
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    });
 					e.printStackTrace();
-				} catch (IOException e) {
-					Toast.makeText(getApplicationContext(), e.toString(),
-							Toast.LENGTH_SHORT).show();
+				} catch (final IOException e) {
+                    Activity activity = getParent();
+                    activity.runOnUiThread(new Runnable() {
+                        public void run() {
+                            Toast.makeText(getApplicationContext(), e.toString(),
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    });
 					e.printStackTrace();
 				}
 			}
