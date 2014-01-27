@@ -35,10 +35,11 @@
           <p>Simple application to allow sending UDP packets directly or via an Intent.ACTION_SENDTO with a udp://host:port/data format URI.</p>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/hastarin">hastarin</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
-        <h1>android-udpsender</h1>
+        <h1>
+<a name="android-udpsender" class="anchor" href="#android-udpsender"><span class="octicon octicon-link"></span></a>android-udpsender</h1>
 
 <p><a href="https://play.google.com/store/apps/details?id=com.hastarin.android.udpsender">UDP Sender</a> is a simple application to allow sending UDP packets.</p>
 
@@ -50,7 +51,12 @@
 <li>data is treated as hex if it starts with 0x.<br>
 </li>
 <li>If a string starting with 0x is to be sent it can be escaped as \0x</li>
-</ul><p><b>As of v1.1</b> </p>
+</ul><p><b>Adeed in v1.2</b></p>
+
+<ul>
+<li>Now supports multi line text messages.</li>
+<li>Bugfix for Send button not working in Landscape mode.</li>
+</ul><p><b>Adeed in v1.1</b> </p>
 
 <ul>
 <li>Also acts as a plugin for Locale and Tasker.<br>
@@ -59,7 +65,8 @@
 <li>Changed theme to Holo (Dark)</li>
 <li>Removed unused permissions</li>
 <li>Various tweaks/fixes</li>
-</ul><h2>Tasker Integration</h2>
+</ul><h2>
+<a name="tasker-integration" class="anchor" href="#tasker-integration"><span class="octicon octicon-link"></span></a>Tasker Integration</h2>
 
 <p>Tasker plugin support is now complete and should be straight forward to use.</p>
 
@@ -81,7 +88,8 @@
 <li>Action = android.intent.action.SENDTO</li>
 <li>Data = udp://192.168.1.100:50000/0x350055</li>
 <li>Target = Activity</li>
-</ul><h2>Tasker Example Project</h2>
+</ul><h2>
+<a name="tasker-example-project" class="anchor" href="#tasker-example-project"><span class="octicon octicon-link"></span></a>Tasker Example Project</h2>
 
 <p><img src="https://raw.github.com/hastarin/android-udpsender/screenshots/screenshots/TaskerLightsScene.png" alt="Lights Scene"></p>
 
