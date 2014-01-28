@@ -1,0 +1,7 @@
+<!-- From: file:/C:/Users/Jonathan%20Benson/Documents/GitHub/android-udpsender/libraries/locale-api/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.twofortyfouram.locale.api">
+
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="19"/>
+
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+
+</manifest>

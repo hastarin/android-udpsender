@@ -25,5 +25,11 @@ local.properties
 .idea/tasks.xml
 out/
 
+# Gradle build folder
+.gradle/
+
 # Proguard logs
 proguard_logs/
+
+# Misc
+Thumbs.db

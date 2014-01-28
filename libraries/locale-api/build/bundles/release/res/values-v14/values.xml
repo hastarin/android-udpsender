@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/C:/Users/Jonathan%20Benson/Documents/GitHub/android-udpsender/libraries/locale-api/res/values-v14/styles.xml -->
+    <eat-comment />
+
+    <style name="Theme.Locale.Dark" parent="android:Theme.DeviceDefault" />
+
+    <style name="Theme.Locale.Dialog" parent="android:Theme.DeviceDefault.Dialog" />
+
+    <style name="Theme.Locale.Light" parent="android:Theme.DeviceDefault.Light" />
+
+</resources>

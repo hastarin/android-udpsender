@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="locale-api">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/locale-api.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

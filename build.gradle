@@ -3,35 +3,6 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.5.+'
-        compile file('libs/locale-api.jar')
-    }
-}
-apply plugin: 'android'
-
-dependencies {
-    compile file('libs/locale-api.jar')
-}
-
-android {
-    compileSdkVersion 19
-    buildToolsVersion "19"
-
-    defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 19
-    }
-    sourceSets {
-        main {
-            manifest.srcFile 'AndroidManifest.xml'
-            java.srcDirs = ['src']
-            resources.srcDirs = ['src']
-            aidl.srcDirs = ['src']
-            renderscript.srcDirs = ['src']
-            res.srcDirs = ['res']
-            assets.srcDirs = ['assets']
-        }
-
-        instrumentTest.setRoot('tests')
+        classpath 'com.android.tools.build:gradle:0.7.+'
     }
 }
