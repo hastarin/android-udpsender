@@ -27,32 +27,51 @@ public class EditTextIPAddress extends EditText {
 		initialize();
 	}
 
+    @Override
+    public void setInputType(int type)
+    {
+        super.setInputType(type);
+        HandleInputType(type);
+    }
+
+    private void HandleInputType(int type)
+    {
+        switch (type) {
+            case InputType.TYPE_CLASS_PHONE:
+                setFilters(new InputFilter[] { new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence source, int start, int end,
+                                               android.text.Spanned destination, int dstart, int dend) {
+                        if (end > start) {
+                            String destinationString= destination.toString();
+                            String resultingText = destinationString.substring(0, dstart)
+                                    + source.subSequence(start, end)
+                                    + destinationString.substring(dend);
+                            if (!resultingText
+                                    .matches("^\\d{1,3}(\\.(\\d{1,3}(\\.(\\d{1,3}(\\.(\\d{1,3})?)?)?)?)?)?")) {
+                                return "";
+                            } else {
+                                String[] splits = resultingText.split("\\.");
+                                for (int i = 0; i < splits.length; i++) {
+                                    if (Integer.valueOf(splits[i]) > 255) {
+                                        return "";
+                                    }
+                                }
+                            }
+                        }
+                        return null;
+                    }
+                } });
+                break;
+            default:
+                setFilters(new InputFilter[]{});
+                break;
+        }
+    }
+
 	private void initialize() {
-        setInputType(InputType.TYPE_CLASS_PHONE);
-        setFilters(new InputFilter[] { new InputFilter() {
-			@Override
-			public CharSequence filter(CharSequence source, int start, int end,
-					android.text.Spanned destination, int dstart, int dend) {
-				if (end > start) {
-					String destinationString= destination.toString();
-					String resultingText = destinationString.substring(0, dstart)
-							+ source.subSequence(start, end)
-							+ destinationString.substring(dend);
-					if (!resultingText
-							.matches("^\\d{1,3}(\\.(\\d{1,3}(\\.(\\d{1,3}(\\.(\\d{1,3})?)?)?)?)?)?")) {
-						return "";
-					} else {
-						String[] splits = resultingText.split("\\.");
-						for (int i = 0; i < splits.length; i++) {
-							if (Integer.valueOf(splits[i]) > 255) {
-								return "";
-							}
-						}
-					}
-				}
-				return null;
-			}
-		} });
+
+        HandleInputType(getInputType());
 
 		addTextChangedListener(new TextWatcher() {
 			boolean deleting = false;
@@ -60,7 +79,8 @@ public class EditTextIPAddress extends EditText {
 
 			@Override
 			public void afterTextChanged(Editable s) {
-				if (!deleting) {
+                boolean check = getInputType() == InputType.TYPE_CLASS_PHONE;
+				if (check && !deleting) {
 					String working = s.toString();
 					String[] split = working.split("\\.");
 					String string = split[split.length - 1];

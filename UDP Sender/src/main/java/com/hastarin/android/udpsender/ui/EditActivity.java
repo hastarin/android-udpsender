@@ -15,11 +15,14 @@ package com.hastarin.android.udpsender.ui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ToggleButton;
 import com.hastarin.android.udpsender.R;
+import com.hastarin.android.udpsender.TaskerPlugin;
 import com.hastarin.android.udpsender.ui.bundle.BundleScrubber;
 import com.hastarin.android.udpsender.ui.bundle.PluginBundleManager;
 
@@ -54,12 +57,31 @@ public final class EditActivity extends AbstractPluginActivity {
         ((Button) findViewById(R.id.buttonSend)).setVisibility(View.GONE);
         if (null == savedInstanceState) {
             if (PluginBundleManager.isBundleValid(localeBundle)) {
+                final boolean textInput = localeBundle.getBoolean(PluginBundleManager.BUNDLE_EXTRA_BOOL_INPUTTEXT);
+                ((ToggleButton)findViewById(R.id.toggleButton)).setChecked(textInput);
                 final String host =
                         localeBundle.getString(PluginBundleManager.BUNDLE_EXTRA_STRING_HOST);
-                ((EditTextIPAddress) findViewById(R.id.editTextIP)).setText(host);
-                final int port =
-                        localeBundle.getInt(PluginBundleManager.BUNDLE_EXTRA_INT_PORT);
-                ((EditText) findViewById(R.id.editTextPort)).setText(Integer.toString(port));
+                EditTextIPAddress editTextIPAddress = (EditTextIPAddress) findViewById(R.id.editTextIP);
+                if (textInput) {
+                    editTextIPAddress.setInputType(InputType.TYPE_CLASS_TEXT);
+                }
+                editTextIPAddress.setText(host);
+                String portText = "";
+                if (localeBundle.containsKey(PluginBundleManager.BUNDLE_EXTRA_STRING_PORT))
+                {
+                   portText = localeBundle.getString(PluginBundleManager.BUNDLE_EXTRA_STRING_PORT);
+                }
+                else
+                {
+                    final int port =
+                            localeBundle.getInt(PluginBundleManager.BUNDLE_EXTRA_INT_PORT);
+                    portText = Integer.toString(port);
+                }
+                EditText editText = (EditText) findViewById(R.id.editTextPort);
+                if (textInput) {
+                    editText.setInputType(InputType.TYPE_CLASS_TEXT);
+                }
+                editText.setText(portText);
                 final String text =
                         localeBundle.getString(PluginBundleManager.BUNDLE_EXTRA_STRING_TEXT);
                 if (!TextUtils.isEmpty(text)) {
@@ -80,9 +102,10 @@ public final class EditActivity extends AbstractPluginActivity {
             final String host = ((EditTextIPAddress) findViewById(R.id.editTextIP)).getText().toString();
             final String text = ((EditText) findViewById(R.id.editTextData)).getText().toString();
             final String hex = ((EditTextHex) findViewById(R.id.editTextHexData)).getText().toString();
+            final boolean inputText = ((ToggleButton) findViewById(R.id.toggleButton)).isChecked();
             try {
-                final int port = Integer.parseInt(((EditText) findViewById(R.id.editTextPort)).getText().toString());
-                if (host.length() > 0 && port > 0 && (text.length() > 0 || hex.length() > 0)) {
+                final String port = ((EditText) findViewById(R.id.editTextPort)).getText().toString();
+                if (host.length() > 0 && port.length() > 0 && (text.length() > 0 || hex.length() > 0)) {
                     final Intent resultIntent = new Intent();
 
                 /*
@@ -94,13 +117,15 @@ public final class EditActivity extends AbstractPluginActivity {
                  * stored in the Bundle, as Locale's classloader will not recognize it).
                  */
                     final Bundle resultBundle =
-                            PluginBundleManager.generateBundle(getApplicationContext(), host, port, text, hex);
+                            PluginBundleManager.generateBundle(getApplicationContext(), host, port, text, hex, inputText);
                     resultIntent.putExtra(com.twofortyfouram.locale.Intent.EXTRA_BUNDLE, resultBundle);
 
+                    if ( TaskerPlugin.Setting.hostSupportsOnFireVariableReplacement( this ) )
+                        TaskerPlugin.Setting.setVariableReplaceKeys( resultBundle, new String [] { PluginBundleManager.BUNDLE_EXTRA_STRING_HOST, PluginBundleManager.BUNDLE_EXTRA_STRING_PORT, PluginBundleManager.BUNDLE_EXTRA_STRING_TEXT } );
                 /*
                  * The blurb is concise status text to be displayed in the host's UI.
                  */
-                    String message = String.format("udp://%s:%d/", host, port);
+                    String message = String.format("udp://%s:%s/", host, port);
                     message += TextUtils.isEmpty(hex) ? text : "0x" + hex;
                     final String blurb = generateBlurb(getApplicationContext(), message);
                     resultIntent.putExtra(com.twofortyfouram.locale.Intent.EXTRA_STRING_BLURB, blurb);
@@ -131,5 +156,20 @@ public final class EditActivity extends AbstractPluginActivity {
         }
 
         return message;
+    }
+
+    public void onToggleClicked(View view) {
+        boolean on = ((ToggleButton) view).isChecked();
+
+
+        EditText editTextIp = (EditText) findViewById(R.id.editTextIP);
+        EditText editTextPort = (EditText) findViewById(R.id.editTextPort);
+        if (on) {
+            editTextIp.setInputType(InputType.TYPE_CLASS_TEXT);
+            editTextPort.setInputType(InputType.TYPE_CLASS_TEXT);
+        } else {
+            editTextIp.setInputType(InputType.TYPE_CLASS_PHONE);
+            editTextPort.setInputType(InputType.TYPE_CLASS_PHONE);
+        }
     }
 }

@@ -39,6 +39,13 @@ public final class PluginBundleManager {
     /**
      * Type: {@code String}.
      * <p/>
+     * Key for bundled data of a Port to send data to.
+     */
+    public static final String BUNDLE_EXTRA_STRING_PORT = "com.hastarin.android.udpsender.extra.PORT2"; //$NON-NLS-1$
+
+    /**
+     * Type: {@code String}.
+     * <p/>
      * Key for bundled data of text data to send.
      */
     public static final String BUNDLE_EXTRA_STRING_TEXT = "com.hastarin.android.udpsender.extra.TEXT"; //$NON-NLS-1$
@@ -49,6 +56,13 @@ public final class PluginBundleManager {
      * Key for bundled data of hex data to send.
      */
     public static final String BUNDLE_EXTRA_STRING_HEX = "com.hastarin.android.udpsender.extra.HEX"; //$NON-NLS-1$
+
+    /**
+     * Type: {@code String}.
+     * <p/>
+     * Key for bundled data of hex data to send.
+     */
+    public static final String BUNDLE_EXTRA_BOOL_INPUTTEXT = "com.hastarin.android.udpsender.extra.INPUTTEXT"; //$NON-NLS-1$
 
     /**
      * Type: {@code int}.
@@ -92,10 +106,10 @@ public final class PluginBundleManager {
             }
             return false;
         }
-        if (!bundle.containsKey(BUNDLE_EXTRA_INT_PORT)) {
+        if (!bundle.containsKey(BUNDLE_EXTRA_INT_PORT) && !bundle.containsKey(BUNDLE_EXTRA_STRING_PORT)) {
             if (Constants.IS_LOGGABLE) {
                 Log.e(Constants.LOG_TAG,
-                        String.format("bundle must contain extra %s", BUNDLE_EXTRA_INT_PORT)); //$NON-NLS-1$
+                        String.format("bundle must contain extra %s or %s", BUNDLE_EXTRA_INT_PORT, BUNDLE_EXTRA_STRING_PORT)); //$NON-NLS-1$
             }
             return false;
         }
@@ -135,13 +149,15 @@ public final class PluginBundleManager {
             return false;
         }
 
-        if (bundle.getInt(BUNDLE_EXTRA_INT_PORT, 0) != bundle.getInt(BUNDLE_EXTRA_INT_PORT, 1)) {
-            if (Constants.IS_LOGGABLE) {
-                Log.e(Constants.LOG_TAG,
-                        String.format("bundle extra %s appears to be the wrong type.  It must be an int", BUNDLE_EXTRA_INT_VERSION_CODE)); //$NON-NLS-1$
-            }
+        if (bundle.containsKey(BUNDLE_EXTRA_INT_PORT)) {
+            if (bundle.getInt(BUNDLE_EXTRA_INT_PORT, 0) != bundle.getInt(BUNDLE_EXTRA_INT_PORT, 1)) {
+                if (Constants.IS_LOGGABLE) {
+                    Log.e(Constants.LOG_TAG,
+                            String.format("bundle extra %s appears to be the wrong type.  It must be an int", BUNDLE_EXTRA_INT_VERSION_CODE)); //$NON-NLS-1$
+                }
 
-            return false;
+                return false;
+            }
         }
 
         if (bundle.getInt(BUNDLE_EXTRA_INT_VERSION_CODE, 0) != bundle.getInt(BUNDLE_EXTRA_INT_VERSION_CODE, 1)) {
@@ -162,16 +178,18 @@ public final class PluginBundleManager {
      * @param port    The port value to be displayed by the plug-in. Cannot be null.
      * @param text    The text value to be displayed by the plug-in. Can be null.
      * @param hex     The hex value to be displayed by the plug-in. Can be null.
+     * @param inputText True if the plugin is set to allow text input. Can be null.
      * @return A plug-in bundle.
      */
-    public static Bundle generateBundle(final Context context, final String host, final int port, final String text, final String hex) {
+    public static Bundle generateBundle(final Context context, final String host, final String port, final String text, final String hex, final boolean inputText) {
         final Bundle result = new Bundle();
         result.putInt(BUNDLE_EXTRA_INT_VERSION_CODE, Constants.getVersionCode(context));
         result.putString(BUNDLE_EXTRA_STRING_HOST, host);
-        result.putInt(BUNDLE_EXTRA_INT_PORT, port);
+        result.putString(BUNDLE_EXTRA_STRING_PORT, port);
         result.putString(BUNDLE_EXTRA_STRING_TEXT, text);
         result.putString(BUNDLE_EXTRA_STRING_HEX, hex);
         result.putString(TASKER_EXTRAS_VARIABLES_REPLACE_KEYS, BUNDLE_EXTRA_STRING_TEXT);
+        result.putBoolean(BUNDLE_EXTRA_BOOL_INPUTTEXT, inputText);
 
         return result;
     }

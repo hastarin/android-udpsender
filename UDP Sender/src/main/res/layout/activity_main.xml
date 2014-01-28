@@ -33,7 +33,7 @@
             android:ems="10"
             android:hint="@string/hint_ip"
             android:nextFocusDown="@+id/editTextPort"
-            android:inputType="phone"/>
+            android:inputType="phone|text"/>
 
         <EditText
             android:id="@+id/editTextPort"
@@ -123,6 +123,17 @@
             android:layout_below="@+id/editTextHexData"
             android:text="@string/label_hex_default"
             android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton"
+            android:textOff="123"
+            android:textOn="ABC"
+            android:checked="false"
+            android:onClick="onToggleClicked"
+            android:layout_above="@+id/editTextData"
+            android:layout_toLeftOf="@+id/editTextPort"/>
 
     </RelativeLayout>
 

@@ -46,6 +46,16 @@
             android:hint="@string/hint_port"
             android:inputType="phone"/>
 
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton"
+            android:textOff="123"
+            android:textOn="ABC"
+            android:checked="false"
+            android:onClick="onToggleClicked"
+            android:layout_toRightOf="@+id/editTextPort"/>
+
         <Button
             android:id="@+id/buttonSend"
             android:layout_width="wrap_content"
