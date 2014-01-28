@@ -12,6 +12,7 @@ It supports the implicit [Intent](http://developer.android.com/reference/android
 
 <b>Adeed in v1.3</b> - Current in Beta see http://goo.gl/reibxw to join
 * Added support for Tasker to do variable replacement for the host/port as well as the text.
+* Remembers your settings when you quit and re-launch the app.
 
 <b>Adeed in v1.2</b>
 * Now supports multi line text messages.
