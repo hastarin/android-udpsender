@@ -10,7 +10,7 @@ It supports the implicit [Intent](http://developer.android.com/reference/android
 * data is treated as hex if it starts with 0x.  
 * If a string starting with 0x is to be sent it can be escaped as \0x
 
-<b>Adeed in v1.3</b>
+<b>Adeed in v1.3</b> - Current in Beta see http://goo.gl/reibxw to join
 * Added support for Tasker to do variable replacement for the host/port as well as the text.
 
 <b>Adeed in v1.2</b>
