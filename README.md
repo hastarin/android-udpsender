@@ -10,7 +10,11 @@ It supports the implicit [Intent](http://developer.android.com/reference/android
 * data is treated as hex if it starts with 0x.  
 * If a string starting with 0x is to be sent it can be escaped as \0x
 
-<b>Added in v1.3</b> - Current in Beta see http://goo.gl/reibxw to join
+<b>Added in v1.3.1</b> - Current in Beta see http://goo.gl/reibxw to join
+* Allow broadcast packets to be sent.
+* Fixed a bug causing a period to be prematurely inserted when entering an IP.
+
+<b>Added in v1.3</b>
 * Added support for Tasker to do variable replacement for the host/port as well as the text.
 * Remembers your settings when you quit and re-launch the app.
 
