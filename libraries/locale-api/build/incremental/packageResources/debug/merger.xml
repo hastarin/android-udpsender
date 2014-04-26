@@ -393,6 +393,7 @@
             </file>
         </source>
         <source path="C:\Users\Jonathan Benson\Documents\GitHub\android-udpsender\libraries\locale-api\build\res\rs\debug" />
+        <source path="C:\Users\Jonathan Benson\Documents\GitHub\android-udpsender\libraries\locale-api\build\res\generated\debug" />
     </dataSet>
     <dataSet config="debug" >
         <source path="C:\Users\Jonathan Benson\Documents\GitHub\android-udpsender\libraries\locale-api\src\debug\res" />

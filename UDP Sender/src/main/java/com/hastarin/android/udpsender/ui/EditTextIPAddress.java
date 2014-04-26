@@ -86,8 +86,8 @@ public class EditTextIPAddress extends EditText {
 					String string = split[split.length - 1];
 					if (string.length() == 3
 							|| string.equalsIgnoreCase("0")
-							|| (string.length() == 2 && Character
-									.getNumericValue(string.charAt(0)) > 1)) {
+							|| (string.length() == 2 && Integer.parseInt(string) > 25))
+                            {
 						s.append('.');
 						return;
 					}

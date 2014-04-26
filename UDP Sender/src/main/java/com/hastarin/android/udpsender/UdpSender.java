@@ -47,6 +47,7 @@ public class UdpSender {
                             .getHost());
                     //Log.v(getString(R.string.app_name), serverAddress.getHostAddress());
                     DatagramSocket socket = new DatagramSocket();
+                    if (!socket.getBroadcast()) socket.setBroadcast(true);
                     DatagramPacket packet = new DatagramPacket(buf, buf.length,
                             serverAddress, uri.getPort());
                     socket.send(packet);
