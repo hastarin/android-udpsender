@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/UDP Sender/UDP Sender.iml" filepath="$PROJECT_DIR$/UDP Sender/UDP Sender.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-udpsender.iml" filepath="$PROJECT_DIR$/android-udpsender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/locale-api/locale-api.iml" filepath="$PROJECT_DIR$/libraries/locale-api/locale-api.iml" />
     </modules>
   </component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Licker/Documents/GitHub/android-udpsender/libraries/locale-api/res/values-sv/strings-sv.xml -->
+    <eat-comment/>
+    <string name="twofortyfouram_locale_breadcrumb_format">%1$s%2$s%3$s</string>
+    <string name="twofortyfouram_locale_breadcrumb_separator">\u0020>\u0020</string>
+    <string name="twofortyfouram_locale_menu_dontsave">Avbryt</string>
+    <string name="twofortyfouram_locale_menu_help">Hjälp</string>
+    <string name="twofortyfouram_locale_menu_save">Klar</string>
+</resources>

@@ -2,6 +2,7 @@ package com.hastarin.android.udpsender;
 
 import android.content.Context;
 import android.net.Uri;
+import android.net.UrlQuerySanitizer;
 import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
@@ -40,16 +41,30 @@ public class UdpSender {
             Log.d(appName, "0x" + bytesToHex(msgBytes));
         }
 
+        // see if we can find a localPort query parameter
+        UrlQuerySanitizer sanitizer = new UrlQuerySanitizer();
+        sanitizer.setAllowUnregisteredParamaters(true);
+        sanitizer.parseUrl(uri.toString());
+        final String _localPort = sanitizer.getValue("localPort");
+
         new Thread(new Runnable() {
             public void run() {
                 try {
-                    InetAddress serverAddress = InetAddress.getByName(uri
-                            .getHost());
+                    String host = uri.getHost();
+                    String hostAddress = host.substring(0, host.lastIndexOf(":"));
+                    int hostPort = Integer.parseInt(host.substring(host.lastIndexOf(":")+1));
+
+                    InetAddress serverAddress = InetAddress.getByName(hostAddress);
                     //Log.v(getString(R.string.app_name), serverAddress.getHostAddress());
-                    DatagramSocket socket = new DatagramSocket();
-                    if (!socket.getBroadcast()) socket.setBroadcast(true);
+                    DatagramSocket socket;
+                    if(_localPort != null)
+                        socket = new DatagramSocket(Integer.parseInt(_localPort));
+                    else
+                        socket = new DatagramSocket(null);
+//                    if (!socket.getBroadcast()) socket.setBroadcast(true);
                     DatagramPacket packet = new DatagramPacket(buf, buf.length,
-                            serverAddress, uri.getPort());
+                            serverAddress, hostPort);
+
                     socket.send(packet);
                     socket.close();
                 } catch (final UnknownHostException e) {

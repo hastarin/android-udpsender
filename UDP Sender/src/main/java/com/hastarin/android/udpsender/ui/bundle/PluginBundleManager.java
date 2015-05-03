@@ -32,6 +32,13 @@ public final class PluginBundleManager {
     /**
      * Type: {@code String}.
      * <p/>
+     * Key for bundled data of a Port to use to bind on the localhost.
+     */
+    public static final String BUNDLE_EXTRA_INT_LOCAL_PORT = "com.hastarin.android.udpsender.extra.LOCAL_PORT"; //$NON-NLS-1$
+
+    /**
+     * Type: {@code String}.
+     * <p/>
      * Key for bundled data of a Port to send data to.
      */
     public static final String BUNDLE_EXTRA_INT_PORT = "com.hastarin.android.udpsender.extra.PORT"; //$NON-NLS-1$
@@ -179,9 +186,10 @@ public final class PluginBundleManager {
      * @param text    The text value to be displayed by the plug-in. Can be null.
      * @param hex     The hex value to be displayed by the plug-in. Can be null.
      * @param inputText True if the plugin is set to allow text input. Can be null.
+     * @param localPort The local port to be used for socket binding. Can be null.
      * @return A plug-in bundle.
      */
-    public static Bundle generateBundle(final Context context, final String host, final String port, final String text, final String hex, final boolean inputText) {
+    public static Bundle generateBundle(final Context context, final String host, final String port, final String text, final String hex, final boolean inputText, final String localPort) {
         final Bundle result = new Bundle();
         result.putInt(BUNDLE_EXTRA_INT_VERSION_CODE, Constants.getVersionCode(context));
         result.putString(BUNDLE_EXTRA_STRING_HOST, host);
@@ -190,6 +198,7 @@ public final class PluginBundleManager {
         result.putString(BUNDLE_EXTRA_STRING_HEX, hex);
         result.putString(TASKER_EXTRAS_VARIABLES_REPLACE_KEYS, BUNDLE_EXTRA_STRING_TEXT);
         result.putBoolean(BUNDLE_EXTRA_BOOL_INPUTTEXT, inputText);
+        result.putString(BUNDLE_EXTRA_INT_LOCAL_PORT, localPort);
 
         return result;
     }

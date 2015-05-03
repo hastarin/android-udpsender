@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Licker\Documents\GitHub\android-udpsender\UDP Sender\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Licker\Documents\GitHub\android-udpsender\UDP Sender\build\intermediates\pre-dexed\debug\classes-86b9de8e87bf6b82600d58f7ce814c7477f3aaad.jar" />
+    </item>
+    <item
+        jar="C:\Users\Licker\Documents\GitHub\android-udpsender\UDP Sender\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Licker\Documents\GitHub\android-udpsender\UDP Sender\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-27d30f63215d89495e8b50195ef019bef70eebb5.jar" />
+    </item>
+    <item
+        jar="D:\Users\Licker\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Licker\Documents\GitHub\android-udpsender\UDP Sender\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-021857a6902919aaa643c157ffa59f4ab719f26e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Licker\Documents\GitHub\android-udpsender\UDP Sender\build\intermediates\exploded-aar\android-udpsender.libraries\locale-api\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f34aafa893d8a06a84857726799f6964fc929480">
+        <dex dex="C:\Users\Licker\Documents\GitHub\android-udpsender\UDP Sender\build\intermediates\pre-dexed\debug\classes-76d1f0b30bea259b07f4b7c2caea0f30c8a05447.jar" />
+    </item>
+
+</items>

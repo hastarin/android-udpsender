@@ -15,6 +15,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import static android.net.Uri.Builder;
+
 public class MainActivity extends Activity {
 
     @Override
@@ -120,13 +122,21 @@ public class MainActivity extends Activity {
             toast.show();
             return;
         }
-        String uriString = "udp://" + host + ":" + port + "/";
+
+        Builder builder = new Builder();
+
+        builder.scheme("udp").authority(host + ":" + port);
+
         if (dataHex.length() >= 2) {
-            uriString += Uri.encode("0x" + dataHex);
+            builder.appendPath(Uri.encode("0x" + dataHex));
         } else {
-            uriString += Uri.encode(dataText);
+            builder.appendPath(Uri.encode(dataText));
         }
-        Uri uri = Uri.parse(uriString);
+
+        //TODO: replace with editable field
+        builder.appendQueryParameter("localPort", "21345");
+
+        Uri uri = builder.build();
         Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
         intent.addFlags(Intent.FLAG_ACTIVITY_PREVIOUS_IS_TOP);
         intent.addCategory(Intent.CATEGORY_DEFAULT);
@@ -136,7 +146,6 @@ public class MainActivity extends Activity {
 
     public void onToggleClicked(View view) {
         boolean on = ((ToggleButton) view).isChecked();
-
 
         EditText editTextIp = (EditText) findViewById(R.id.editTextIP);
         EditText editTextPort = (EditText) findViewById(R.id.editTextPort);
