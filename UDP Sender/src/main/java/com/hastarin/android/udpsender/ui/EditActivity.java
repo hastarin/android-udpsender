@@ -14,6 +14,7 @@ package com.hastarin.android.udpsender.ui;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.InputType;
 import android.text.TextUtils;
@@ -105,6 +106,8 @@ public final class EditActivity extends AbstractPluginActivity {
             final boolean inputText = ((ToggleButton) findViewById(R.id.toggleButton)).isChecked();
             try {
                 final String port = ((EditText) findViewById(R.id.editTextPort)).getText().toString();
+                //TODO: replace with editable field
+                final String localPort = "21345";
                 if (host.length() > 0 && port.length() > 0 && (text.length() > 0 || hex.length() > 0)) {
                     final Intent resultIntent = new Intent();
 
@@ -117,7 +120,7 @@ public final class EditActivity extends AbstractPluginActivity {
                  * stored in the Bundle, as Locale's classloader will not recognize it).
                  */
                     final Bundle resultBundle =
-                            PluginBundleManager.generateBundle(getApplicationContext(), host, port, text, hex, inputText);
+                            PluginBundleManager.generateBundle(getApplicationContext(), host, port, text, hex, inputText, localPort);
                     resultIntent.putExtra(com.twofortyfouram.locale.Intent.EXTRA_BUNDLE, resultBundle);
 
                     if ( TaskerPlugin.Setting.hostSupportsOnFireVariableReplacement( this ) )
@@ -125,9 +128,12 @@ public final class EditActivity extends AbstractPluginActivity {
                 /*
                  * The blurb is concise status text to be displayed in the host's UI.
                  */
-                    String message = String.format("udp://%s:%s/", host, port);
-                    message += TextUtils.isEmpty(hex) ? text : "0x" + hex;
-                    final String blurb = generateBlurb(getApplicationContext(), message);
+                    Uri.Builder builder = new Uri.Builder();
+                    builder.scheme("udp").authority(host + ":" + port);
+                    builder.appendPath(TextUtils.isEmpty(hex) ? text : "0x" + hex );
+                    builder.appendQueryParameter("localPort", localPort);
+
+                    final String blurb = generateBlurb(getApplicationContext(), builder.build().toString());
                     resultIntent.putExtra(com.twofortyfouram.locale.Intent.EXTRA_STRING_BLURB, blurb);
 
                     setResult(RESULT_OK, resultIntent);

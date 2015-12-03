@@ -81,14 +81,24 @@ public final class FireReceiver extends BroadcastReceiver
                     bundle.getString(PluginBundleManager.BUNDLE_EXTRA_STRING_TEXT);
             final String dataHex =
                     bundle.getString(PluginBundleManager.BUNDLE_EXTRA_STRING_HEX);
-            String uriString = "udp://" + host + ":" + portText + "/";
+
+            Uri.Builder builder = new Uri.Builder();
+
+            builder.scheme("udp").authority(host + ":" + portText);
 
             if (dataHex.length() >= 2) {
-                uriString += Uri.encode("0x" + dataHex);
+                builder.appendPath(Uri.encode("0x" + dataHex));
             } else {
-                uriString += Uri.encode(dataText);
+                builder.appendPath(Uri.encode(dataText));
             }
-            Uri uri = Uri.parse(uriString);
+
+            if (bundle.containsKey(PluginBundleManager.BUNDLE_EXTRA_INT_LOCAL_PORT))
+            {
+                String localPortText = bundle.getString(PluginBundleManager.BUNDLE_EXTRA_INT_LOCAL_PORT);
+                builder.appendQueryParameter("localPort", localPortText);
+            }
+
+            Uri uri = builder.build();
             UdpSender udpSender = new UdpSender();
             udpSender.SendTo(context, uri);
         }

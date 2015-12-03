@@ -1,13 +1,13 @@
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 19
-    buildToolsVersion '19.0.3'
+    compileSdkVersion 21
+    buildToolsVersion '21.1.2'
 
     defaultConfig {
         minSdkVersion 8
-        targetSdkVersion 19
+        targetSdkVersion 21
     }
-
+/*
     signingConfigs {
         release {
             storeFile file(RELEASE_STORE_FILE)
@@ -16,17 +16,17 @@ android {
             keyPassword RELEASE_KEY_PASSWORD
         }
     }
-
+*/
     buildTypes {
         release {
-            runProguard true
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
             debuggable false
-            signingConfig signingConfigs.release
+//            signingConfig signingConfigs.release
         }
         debug {
             debuggable true
-            runProguard false
+            minifyEnabled false
         }
     }
 }

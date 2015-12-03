@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <!-- From: file:/C:/Users/Licker/Documents/GitHub/android-udpsender/libraries/locale-api/res/values-mdpi/integers.xml -->
+    <eat-comment/>
+    <integer name="twofortyfouram_locale_maximum_blurb_length" ns1:ignore="UnusedResources">50</integer>
+</resources>

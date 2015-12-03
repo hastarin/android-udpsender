@@ -15,5 +15,6 @@
     <string name="button_send">Send</string>
     <string name="title_activity_send_to_uri">SendToUri</string>
     <string name="plugin_name">UDP Sender</string>
+    <string name="local_port_query">localPort</string>
 
 </resources>
