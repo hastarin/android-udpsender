@@ -1,3 +1,12 @@
+⚠️ **ARCHIVED - No Longer Maintained**
+====================================
+
+This project is **no longer actively maintained**. Development was discontinued due to changes in Google Play Store requirements, particularly around privacy notices and compliance policies that significantly increased the maintenance burden for small hobby projects.
+
+The source code is available for anyone interested in continuing development—feel free to fork this repository if you'd like to maintain or improve it.
+
+---
+
 android-udpsender
 =================
 
@@ -58,7 +67,7 @@ Tasker Example Project
 
 ![Lights Scene](https://raw.github.com/hastarin/android-udpsender/screenshots/screenshots/TaskerLightsScene.png)
 
-You can get a copy of my current Tasker project (or at least a portion of it) [Lights.prj.xml](https://raw.github.com/hastarin/android-udpsender/screenshots/screenshots/Lights.prj.xml) that I'm using for controlling my lights.
+You can get a copy of my current Tasker project (or at least a portion of it) [Lights.prj.xml](https://raw.github.com/hastarin/android-udpsender/screenshots/screenshots/Lights.prj.xml) that I'm using.
 
 To give you an idea of how I'm using it I have the following:
 * Gesture control via my launcher (Nova) to turn all lights on/off/full bright/night mode and dim/brighten lights.
@@ -74,11 +83,10 @@ To give you an idea of how I'm using it I have the following:
 
 See http://www.wunderground.com/weather/api/d/docs for more info on getting one.
 
-It's used by the "Get Sunrise/set" which is called once a day to update the global variables.  I use this in "Check Night Time" to only turn my entry light on at night when I arrive home and connect to my Wi-Fi.
+It's used by the "Get Sunrise/set" which is called once a day to update the global variables. I use this in "Check Night Time" to only turn my entry light on at night when I arrive home and connected to Wi-Fi.
 
-* You'll want to replace the string for my SSID with your own.  Search and replace C86241.  Or remove the Stop commands that prevent things working when not on the correct Wi-Fi.
+* You'll want to replace the string for my SSID with your own. Search and replace C86241. Or remove the Stop commands that prevent things working when not on the correct Wi-Fi.
 
 * You'll obviously need to change IPs and Names to suit your setup.
 
 * Finally if you're using a device that has a different size screen (my S4 is 1920x1080) you'll need to edit the scene so it fits and adjust the maths for the gestures.
-
